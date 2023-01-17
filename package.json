@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently --kill-others --names \"REACT,EXPRESS\" -c \"bgCyan.black,bgGreen.black\" \"vite build --watch --mode development\" \"npm run dev:api\"",
-    "dev:hmr": "concurrently --kill-others --names \"REACT,EXPRESS\" -c \"bgCyan.black,bgGreen.black\" \"vite\" \"npm run dev:api\"",
+    "dev:serve": "concurrently --kill-others --names \"REACT,EXPRESS\" -c \"bgCyan.black,bgGreen.black\" \"vite build --watch --mode development\" \"npm run dev:api\"",
+    "dev": "concurrently --kill-others --names \"REACT,EXPRESS\" -c \"bgCyan.black,bgGreen.black\" \"vite\" \"npm run dev:api\"",
     "dev:ui": "vite",
     "dev:api": "nodemon ./src/server.js",
     "build": "npm run build:api && npm run build:ui",
