@@ -4,8 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "echo not yet dev",
+    "dev:ui": "vite",
+    "dev:api": "vite",
+    "build": "npm run build:api && npm run build:ui",
+    "build:api": "echo api does not need to build!",
+    "build:ui": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
