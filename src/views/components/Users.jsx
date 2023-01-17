@@ -1,26 +1,23 @@
-import { useState, useEffect } from 'react';
+import { useQuery } from 'react-query';
+
 export default function Users() {
-  const [users, setUsers] = useState([]);
+  const { isLoading, error, data } = useQuery('users', () =>
+    fetch('api/users').then((res) => res.json()),
+  );
 
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+  if (isLoading) {
+    return <div>🔄 Loading...</div>;
+  }
 
-  const fetchUsers = async () => {
-    try {
-      const res = await fetch('/api/users');
-      const json = await res.json();
-      setUsers(json.data);
-    } catch (e) {
-      console.error(e);
-    }
-  };
+  if (error) {
+    return <div>⚠️ Error!</div>;
+  }
 
   return (
     <div className="grid grid-cols-3 gap-5 ">
-      {users.map((user) => {
+      {data.data.map((user) => {
         return (
-          <div key={user.id} className="flex gap-3 bg-neutral-50 p-5">
+          <div key={user.id} className="flex gap-3 bg-neutral-50 p-5 rounded-md">
             <img src={user.avatar} className="rounded-md" />
             <div>
               <p>👶 {user.username}</p>
