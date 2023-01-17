@@ -7,6 +7,7 @@ mariposa tech hub website
 - **React** with **Vite** tooling for UI
 - **TailwindCSS** for rapid styling
 - **GitHub Actions** for CI/CD
+- **SwaggerDocs** for API documentation
 
 # 👨‍💻 Getting started
 

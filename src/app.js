@@ -3,7 +3,9 @@ import cors from 'cors';
 import compression from 'compression';
 import helmet from 'helmet';
 import express from 'express';
+import expressJSDocSwagger from 'express-jsdoc-swagger';
 
+import swaggerConfig from './config/swagger.config.js';
 import * as appMiddlewares from './app.middlewares.js';
 import apiRoutes from './api/api.routes.js';
 
@@ -15,6 +17,8 @@ app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(path.join(process.cwd(), 'public'))));
+
+expressJSDocSwagger(app)(swaggerConfig);
 
 app.use('/api', apiRoutes);
 app.use(appMiddlewares.notFoundApiHandler);
