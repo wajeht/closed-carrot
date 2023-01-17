@@ -17,7 +17,7 @@ export default function Users() {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="grid grid-cols-3 gap-5 ">
       {users.map((user) => {
         return (
           <div key={user.id} className="flex gap-3 bg-neutral-50 p-5">
