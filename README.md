@@ -7,3 +7,18 @@ mariposa tech hub website
 - **React** with **Vite** tooling for UI
 - **TailwindCSS** for rapid styling
 - **GitHub Actions** for CI/CD
+
+# 👨‍💻 Getting started
+
+copy `.env.example` as `.env`
+```bash
+$ cp .env.example .env
+```
+install project dependencies
+```bash
+$ npm install
+```
+run project
+```bash
+$ npm run dev
+```
