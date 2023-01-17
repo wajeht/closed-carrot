@@ -19,7 +19,6 @@ export default function App() {
         </button>
       </div>
 
-      <p>Edit src/components/Users.jsx and save to test</p>
       <Users />
     </div>
   );

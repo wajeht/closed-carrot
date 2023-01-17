@@ -5,7 +5,7 @@ import helmet from 'helmet';
 import express from 'express';
 
 import * as appMiddlewares from './app.middlewares.js';
-import apiRoutes from './api/api.js';
+import apiRoutes from './api/api.routes.js';
 
 const app = express();
 
