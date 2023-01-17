@@ -11,14 +11,25 @@ mariposa tech hub website
 # 👨‍💻 Getting started
 
 copy `.env.example` as `.env`
+
 ```bash
 $ cp .env.example .env
 ```
+
 install project dependencies
+
 ```bash
 $ npm install
 ```
+
 run project
+
 ```bash
 $ npm run dev
+```
+
+visit project at
+
+```
+http://localhost:3000
 ```
