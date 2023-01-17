@@ -1,5 +1,5 @@
-# 🦋 mariposa tech hub website
-todo
+# 🦋 Mariposa Tech Hub Website
+mariposa tech hub website
 
 # 📚 Technologies
 - **Node** with **Express** for API
