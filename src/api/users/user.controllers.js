@@ -11,6 +11,7 @@ export function getUsers(req, res) {
 
   for (let i = 0; i < 10; i++) {
     const user = {
+      id: faker.datatype.uuid(),
       avatar: faker.image.avatar(),
       username: faker.internet.userName(),
       email: faker.internet.email(),
