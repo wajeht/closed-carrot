@@ -13,6 +13,7 @@ services:
       - ./:/usr/src/app
       - /usr/src/app/node_modules
     depends_on:
+      - mailhog
       - mongodb
       - mongo-express
     networks:
