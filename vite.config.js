@@ -22,11 +22,12 @@ export default defineConfig({
     'process.env': process.env,
   },
   server: {
+    host: '0.0.0.0',
     port: process.env.REACT_PORT,
     proxy: {
       '/api': {
         target: `http://localhost:${process.env.EXPRESS_PORT}`,
-        changeOrigin: false,
+        changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/api'),
       },
     },
