@@ -16,14 +16,38 @@ import * as userValidators from './user.validators.js';
 user.get('/', catchAsyncHandler(userControllers.getUsers));
 
 /**
- * POST /api/users
+ * GET /api/users/{id}
  * @tags users
- * @summary add a user
- * @param {string} email.form.required - the email - application/x-www-form-urlencoded
- * @param {string} password.form.required - the password - application/x-www-form-urlencoded
- * @param {string} username.form.required - the username - application/x-www-form-urlencoded
+ * @summary get details of a specific user
+ * @param {string} id.path.required - the user id
  * @security BearerAuth
  */
-user.post('/', validator(userValidators.postUser), catchAsyncHandler(userControllers.postUser));
+user.get('/:id', validator(userValidators.getUser), catchAsyncHandler(userControllers.getUser));
+
+/**
+ * GET /api/users/{id}
+ * @tags users
+ * @summary get details of a specific user
+ * @param {string} id.path.required - the user id
+ * @security BearerAuth
+ */
+user.patch(
+  '/:id',
+  validator(userValidators.patchUser),
+  catchAsyncHandler(userControllers.patchUser),
+);
+
+/**
+ * DELETE /api/users/{id}
+ * @tags users
+ * @summary delete a specific user
+ * @param {string} id.path.required - the user id
+ * @security BearerAuth
+ */
+user.delete(
+  '/:id',
+  validator(userValidators.deleteUser),
+  catchAsyncHandler(userControllers.deleteUser),
+);
 
 export default user;
