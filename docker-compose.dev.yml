@@ -1,0 +1,63 @@
+version: '3.9'
+services:
+  app:
+    container_name: app
+    restart: unless-stopped
+    build:
+      context: ./
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - ${EXPRESS_PORT}:${EXPRESS_PORT}
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - mongodb
+      - mongo-express
+    networks:
+      - app-network
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: username
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: database
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongo-data:/data/db
+    ports:
+      - '27017:27017'
+    networks:
+      - app-network
+
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express
+    restart: unless-stopped
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=false
+      - ME_CONFIG_MONGODB_AUTH_DATABASE=database
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=username
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+      - VCAP_APP_PORT=8082
+      # - ME_CONFIG_BASICAUTH_USERNAME=username # enable basic auth for ui
+      # - ME_CONFIG_BASICAUTH_PASSWORD=password
+    depends_on:
+      - mongodb
+    ports:
+      - '8082:8082'
+    networks:
+      - app-network
+
+volumes:
+  mongo-data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

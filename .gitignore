@@ -24,3 +24,5 @@ dist-ssr
 .env
 public/assets
 public/index.html
+mongo-data
+mongo-data/*
