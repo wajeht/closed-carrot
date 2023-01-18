@@ -32,11 +32,11 @@ $ docker compose up
 ```
 
 wait until you get the following messages.
+
 ```
 app            | [EXPRESS] db connection started!
 app            | [EXPRESS] Express server is running at http://localhost:8080
 ```
-
 
 visit project at
 
