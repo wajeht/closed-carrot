@@ -1,4 +1,6 @@
 import { validator } from '../api.middlewares.js';
+import catchAsyncHandler from 'express-async-handler';
+
 import express from 'express';
 const user = express.Router();
 
@@ -11,7 +13,7 @@ import * as userValidators from './user.validators.js';
  * @summary get list of users
  * @security BearerAuth
  */
-user.get('/', userControllers.getUsers);
+user.get('/', catchAsyncHandler(userControllers.getUsers));
 
 /**
  * POST /api/users
@@ -22,6 +24,6 @@ user.get('/', userControllers.getUsers);
  * @param {string} username.form.required - the username - application/x-www-form-urlencoded
  * @security BearerAuth
  */
-user.post('/', validator(userValidators.postUser), userControllers.postUser);
+user.post('/', validator(userValidators.postUser), catchAsyncHandler(userControllers.postUser));
 
 export default user;
