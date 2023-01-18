@@ -40,3 +40,20 @@ jobs:
         run: npm i
       - name: Lint codes
         run: npm run lint
+
+  Test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm i
+      - name: Test codes
+        run: npm run test
