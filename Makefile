@@ -1,25 +1,23 @@
-
-
 up:
-	docker compose --file ./docker-compose.dev.yml up
+	docker compose up
 
 up-d:
-	docker compose --file ./docker-compose.dev.yml up -d
+	docker compose up -d
 
 log:
-	docker compose --file ./docker-compose.dev.yml logs -f
+	docker compose logs -f
 
 down:
-	docker compose --file ./docker-compose.dev.yml down
+	docker compose down
 
 clean:
-	docker compose --file ./docker-compose.dev.yml down --rmi all
+	docker compose down --rmi all
 
 test:
-	docker compose --file ./docker-compose.dev.yml exec app npm run test
+	docker compose exec app npm run test
 
 lint:
-	docker compose --file ./docker-compose.dev.yml exec app npm run lint:fix
+	docker compose exec app npm run lint:fix
 
 format:
-	docker compose --file ./docker-compose.dev.yml exec app npm run format:write
+	docker compose exec app npm run format:write

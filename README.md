@@ -13,26 +13,33 @@ mariposa tech hub website
 
 # 👨‍💻 Getting started
 
+install docker
+
+```
+https://www.docker.com/
+```
+
 copy `.env.example` as `.env`
 
 ```bash
 $ cp .env.example .env
 ```
 
-install project dependencies
-
-```bash
-$ npm install
-```
-
 run project
 
 ```bash
-$ npm run dev
+$ docker compose up
 ```
+
+wait until you get the following messages.
+```
+app            | [EXPRESS] db connection started!
+app            | [EXPRESS] Express server is running at http://localhost:8080
+```
+
 
 visit project at
 
 ```
-http://localhost:3000
+http://localhost:8080
 ```
