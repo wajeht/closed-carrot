@@ -1,29 +1,47 @@
 import { faker } from '@faker-js/faker';
+import { StatusCodes } from 'http-status-codes';
 
-/**
- * It creates 10 fake users and returns them in a JSON response
- * @param req - The request object.
- * @param res - The response object.
- * @returns An array of 10 fake users.
- */
+const fakeUsers = [];
+
+for (let i = 0; i < 10; i++) {
+  const user = {
+    id: faker.datatype.uuid(),
+    avatar: faker.image.avatar(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: faker.internet.password(),
+  };
+  fakeUsers.push(user);
+}
+
 export function getUsers(req, res) {
-  const fakeUsers = [];
-
-  for (let i = 0; i < 10; i++) {
-    const user = {
-      id: faker.datatype.uuid(),
-      avatar: faker.image.avatar(),
-      username: faker.internet.userName(),
-      email: faker.internet.email(),
-      password: faker.internet.password(),
-    };
-    fakeUsers.push(user);
-  }
-
-  return res.status(200).json({
+  return res.status(StatusCodes.OK).json({
     success: true,
     requestUrl: req.originalUrl,
     message: 'The resources were returned successfully!',
     data: fakeUsers,
+  });
+}
+
+export function postUser(req, res) {
+  const { email, password, username } = req.body;
+
+  console.log(req.body);
+
+  const user = {
+    id: faker.datatype.uuid(),
+    avatar: faker.image.avatar(),
+    username,
+    email,
+    password,
+  };
+
+  fakeUsers.push(user);
+
+  return res.status(StatusCodes.CREATED).json({
+    success: true,
+    requestUrl: req.originalUrl,
+    message: 'The resources was created successfully!',
+    data: [user],
   });
 }
