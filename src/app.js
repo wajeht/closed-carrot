@@ -5,10 +5,15 @@ import helmet from 'helmet';
 import express from 'express';
 import expressJSDocSwagger from 'express-jsdoc-swagger';
 
+import apiRoutes from './api/api.routes.js';
 import swaggerConfig from './config/swagger.config.js';
+
 import * as appMiddlewares from './app.middlewares.js';
 import * as apiMiddlewares from './api/api.middlewares.js';
-import apiRoutes from './api/api.routes.js';
+import * as rateLimiters from './config/rate-limiters.config.js';
+
+import { ENV_ENUM } from './utils/enums.js';
+import { ENV } from './config/constants.js';
 
 const app = express();
 
@@ -19,11 +24,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(path.join(process.cwd(), 'public'))));
 
+app.use(apiMiddlewares.httpApiResponses);
+
 expressJSDocSwagger(app)(swaggerConfig);
 
-app.use(apiMiddlewares.httpApiResponses);
+if (ENV === ENV_ENUM.PRODUCTION) {
+  app.use('/api', rateLimiters.api, apiRoutes);
+  app.use('*', rateLimiters.app, appMiddlewares.reactHandler);
+}
+
 app.use('/api', apiRoutes);
 app.use('*', appMiddlewares.reactHandler);
+
 app.use(appMiddlewares.notFoundApiHandler);
 app.use(appMiddlewares.errorApiHandler);
 

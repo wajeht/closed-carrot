@@ -1,6 +1,7 @@
 import path from 'path';
 import CustomError from './api/api.errors.js';
 import { ENV } from './config/constants.js';
+import { ENV_ENUM } from './utils/enums.js';
 
 export function reactHandler(req, res, next) {
   try {
@@ -32,7 +33,7 @@ export function errorApiHandler(err, req, res, next) {
         success: false,
         request_url: req.originalUrl,
         errors: err?.errors,
-        message: ENV === 'development' ? err.stack : err.message,
+        message: ENV === ENV_ENUM.DEVELOPMENT ? err.stack : err.message,
         data: null,
       });
     }
