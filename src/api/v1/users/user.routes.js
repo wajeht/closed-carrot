@@ -1,4 +1,4 @@
-import { validator } from '../api.middlewares.js';
+import { validator } from '../../api.middlewares.js';
 import catchAsyncHandler from 'express-async-handler';
 
 import express from 'express';
