@@ -4,7 +4,6 @@ export function getUsers(req, res) {
   // todo
 
   const users = [];
-
   for (let i = 0; i < 10; i++) {
     const user = {
       id: faker.datatype.uuid(),
@@ -16,9 +15,7 @@ export function getUsers(req, res) {
     users.push(user);
   }
 
-  return res.json({
-    data: users,
-  });
+  return res.success({ data: users });
 }
 
 export function getUser(req, res) {

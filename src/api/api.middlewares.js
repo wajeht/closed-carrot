@@ -1,4 +1,5 @@
 import { validationResult } from 'express-validator';
+import { StatusCodes } from 'http-status-codes';
 import CustomError from './api.errors.js';
 
 export const validator = (schemas) => {
@@ -14,3 +15,32 @@ export const validator = (schemas) => {
     }
   };
 };
+
+export function httpApiResponses(req, res, next) {
+  const response = (
+    { success = false, message = '', cache = false, error = [], data = [] } = {},
+    statusCode,
+  ) => {
+    return res.status(statusCode).json({
+      success,
+      statusCode,
+      message,
+      requestUrl: req.originalUrl,
+      cache,
+      query: req.query,
+      params: req.params,
+      body: req.body,
+      error,
+      data,
+    });
+  };
+
+  res.success = function (args) {
+    return response(
+      { success: true, message: 'The request was successful!', ...args },
+      StatusCodes.OK,
+    );
+  };
+
+  next();
+}
