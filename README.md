@@ -7,10 +7,10 @@ mariposa tech hub website
 - **Node** with **Express** for API
 - **MongoDB** for database
 - **React** with **Vite** tooling for UI
-- **TailwindCSS** for rapid styling
+- **[TailwindCSS](https://tailwindcss.com/)** for rapid styling
 - **GitHub Actions** for CI/CD
 - **SwaggerDocs** for API documentation
-- **React Query** for data fetching on React
+- **[React Query](https://react-query-v3.tanstack.com/)** for data fetching on React
 - **[react-icons](https://react-icons.github.io/react-icons/)** for icons
 
 # 👨‍💻 Getting started
