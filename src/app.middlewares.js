@@ -26,6 +26,7 @@ export function notFoundApiHandler(req, res, next) {
 export function errorApiHandler(err, req, res, next) {
   const isApiPrefix = req.url.match(/\/api\//g);
   if (isApiPrefix) {
+    console.error(err);
     if (err instanceof CustomError.ValidationError) {
       return res.status(err.statusCode).json({
         success: false,
