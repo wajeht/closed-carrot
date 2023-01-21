@@ -31,10 +31,10 @@ expressJSDocSwagger(app)(swaggerConfig);
 if (ENV === ENV_ENUM.PRODUCTION) {
   app.use('/api', rateLimiters.api, apiRoutes);
   app.use('*', rateLimiters.app, appMiddlewares.reactHandler);
+} else {
+  app.use('/api', apiRoutes);
+  app.use('*', appMiddlewares.reactHandler);
 }
-
-app.use('/api', apiRoutes);
-app.use('*', appMiddlewares.reactHandler);
 
 app.use(appMiddlewares.notFoundApiHandler);
 app.use(appMiddlewares.errorApiHandler);
