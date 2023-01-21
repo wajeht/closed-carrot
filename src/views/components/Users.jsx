@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 
 export default function Users() {
   const { isLoading, error, data } = useQuery('users', () =>
-    fetch('api/users').then((res) => res.json()),
+    fetch('/api/v1/users').then((res) => res.json()),
   );
 
   if (isLoading) {
@@ -11,7 +11,7 @@ export default function Users() {
   }
 
   if (error) {
-    return <div>⚠️ Error!</div>;
+    return <div>❌ Error!</div>;
   }
 
   return (

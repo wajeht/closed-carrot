@@ -10,6 +10,8 @@ mariposa tech hub website
 - **TailwindCSS** for rapid styling
 - **GitHub Actions** for CI/CD
 - **SwaggerDocs** for API documentation
+- **React Query** for data fetching on React
+- **Fontawesome** for icons
 
 # 👨‍💻 Getting started
 
