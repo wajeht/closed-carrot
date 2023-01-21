@@ -1,5 +1,7 @@
 import React from 'react';
 import { useQuery } from 'react-query';
+import { FaSpinner, FaSkull, FaUserAlt } from 'react-icons/fa';
+import { AiTwotoneMail, AiFillLock } from 'react-icons/ai';
 
 export default function Users() {
   const { isLoading, error, data } = useQuery('users', () =>
@@ -7,11 +9,21 @@ export default function Users() {
   );
 
   if (isLoading) {
-    return <div>🔄 Loading...</div>;
+    return (
+      <div className="flex items-center gap-2">
+        <FaSpinner />
+        Loading...
+      </div>
+    );
   }
 
   if (error) {
-    return <div>❌ Error!</div>;
+    return (
+      <div className="flex items-center gap-2">
+        <FaSkull />
+        Error!
+      </div>
+    );
   }
 
   return (
@@ -21,9 +33,18 @@ export default function Users() {
           <div key={user.id} className="flex gap-3 bg-neutral-50 p-5 rounded-md">
             <img src={user.avatar} className="rounded-md" />
             <div>
-              <p>👶 {user.username}</p>
-              <p>💌 {user.email}</p>
-              <p>🔒 {user.password}</p>
+              <p className="flex items-center gap-2">
+                <FaUserAlt />
+                {user.username}
+              </p>
+              <p className="flex items-center gap-2">
+                <AiTwotoneMail />
+                {user.email}
+              </p>
+              <p className="flex items-center gap-2">
+                <AiFillLock />
+                {user.password}
+              </p>
             </div>
           </div>
         );

@@ -11,7 +11,7 @@ mariposa tech hub website
 - **GitHub Actions** for CI/CD
 - **SwaggerDocs** for API documentation
 - **React Query** for data fetching on React
-- **Fontawesome** for icons
+- **[react-icons](https://react-icons.github.io/react-icons/)** for icons
 
 # 👨‍💻 Getting started
 
