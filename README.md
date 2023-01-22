@@ -122,5 +122,3 @@ to run formatting code
 ```bash
 $ docker compose exec app npm run format    # make format
 ```
-
-x
