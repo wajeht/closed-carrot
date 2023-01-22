@@ -14,6 +14,15 @@ export default function Header() {
             <li>
               <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
+            <li>
+              <a
+                href="https://github.com/Mariposa-Tech-Hub/mariposa-tech-hub-website"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
