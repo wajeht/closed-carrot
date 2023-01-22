@@ -94,7 +94,7 @@ to stop docker containers
 $ docker compose down      # make down
 ```
 
-to view container log
+to view docker containers log *(previously must run `docker compose up -d)*
 
 ```bash
 $ docker compose logs -f    # make log
