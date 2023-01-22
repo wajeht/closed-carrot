@@ -95,9 +95,7 @@ jobs:
         with:
           command: c
           cwd: './'
-          files: |
-            ./
-            captain-definition
+          files: ./
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
