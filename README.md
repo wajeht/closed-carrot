@@ -104,7 +104,7 @@ $ docker compose logs -f    # make log
 to clean remove docker containers
 
 ```bash
-$	docker compose down --rmi all   # make clean
+$ docker compose down --rmi all   # make clean
 ```
 
 to run tests
