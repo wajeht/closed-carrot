@@ -46,14 +46,14 @@ visit project at
 http://localhost:8081 # with hmr
 ```
 
-### Things to know
-for react built dist with express serving the dist files as static
+# 🙋️ Things to know
+for react built dist with express serving the dist files as static *(will be used for prod)*
 
 ```
 http://localhost:8080
 ```
 
-for real time reloading for react when any css or api file changes (highly recommended)
+for real time reloading  when any css or api file changes *(highly recommended)*
 
 ```
 http://localhost:8081
