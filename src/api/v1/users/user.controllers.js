@@ -4,7 +4,8 @@ export function getUsers(req, res) {
   // todo
 
   const users = [];
-  for (let i = 0; i < 10; i++) {
+
+  for (let i = 0; i < 4; i++) {
     const user = {
       id: faker.datatype.uuid(),
       avatar: faker.internet.avatar(),

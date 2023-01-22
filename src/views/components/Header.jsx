@@ -17,13 +17,19 @@ export default function Header() {
               <Link to="/users">Users</Link>
             </li>
             <li>
-              <Link to="/about-us">About us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/contact-us">Contact us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
             <li>
               <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/register">Register</Link>
+            </li>
+            <li>
+              <Link to="/forgot-password">Forgot Password</Link>
             </li>
           </ul>
         </nav>

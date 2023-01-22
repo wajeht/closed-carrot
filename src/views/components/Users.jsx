@@ -27,10 +27,10 @@ export default function Users() {
   }
 
   return (
-    <div className="grid grid-cols-3 gap-5 ">
+    <div className="grid grid-cols-4 gap-5 ">
       {data.data.map((user) => {
         return (
-          <div key={user.id} className="flex gap-3 bg-slate-200 p-5 rounded-md">
+          <div key={user.id} className="flex flex-col gap-3 bg-slate-200 p-5 rounded-md  shadow-md">
             <img src={user.avatar} className="rounded-md" />
             <div>
               <p className="flex items-center gap-2">

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <footer className="bg-slate-300 p-3">
       <div className="max-w-7xl mx-auto flex justify-between">
-        <span>Copyright @ 2022 </span>
+        <span>Copyright © 2022 </span>
         <nav>
           <ul className="flex gap-3">
             <li>
