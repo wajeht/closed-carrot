@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function TermsOfService() {
-  return <div>Terms of service</div>;
+  return <div>this is a terms of service page</div>;
 }
