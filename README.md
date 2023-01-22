@@ -110,17 +110,17 @@ $	docker compose down --rmi all   # make clean
 to run tests
 
 ```bash
-$	docker compose exec app npm run test   # make test
+$ docker compose exec app npm run test   # make test
 ```
 
 to run lint
 
 ```bash
-$	docker compose exec app npm run lint    # make lint
+$ docker compose exec app npm run lint    # make lint
 ```
 
 to run formatting code
 
 ```bash
-$	docker compose exec app npm run format    # make format
+$ docker compose exec app npm run format    # make format
 ```
