@@ -2,7 +2,7 @@ import request from 'supertest';
 import { describe, it, expect } from 'vitest';
 import { StatusCodes } from 'http-status-codes';
 
-import app from '../../app.js';
+import app from '../../../app.js';
 
 describe('GET /api/users', () => {
   it('should returns a success response', async () => {
