@@ -7,10 +7,10 @@ mariposa tech hub website
 - **Node** with **Express** for API
 - **MongoDB and Mongoose** for database and modeling
 - **React** with **Vite** tooling for UI
-- **Vitest** for unit testing
+- **[Vitest](https://vitest.dev/)** for unit testing
 - **[TailwindCSS](https://tailwindcss.com/)** for rapid styling
 - **GitHub Actions** for CI/CD
-- **SwaggerDocs** for API documentation
+- **[SwaggerDocs](https://github.com/brikev/express-jsdoc-swagger)** for API documentation
 - **[React Query](https://react-query-v3.tanstack.com/)** for data fetching on React
 - **[react-icons](https://react-icons.github.io/react-icons/)** for icons
 
