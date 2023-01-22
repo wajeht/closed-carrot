@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node ./src/server.js",
     "dev:serve": "concurrently --kill-others --names \"REACT,EXPRESS\" -c \"bgCyan.black,bgGreen.black\" \"vite build --watch --mode development\" \"npm run dev:api\"",
     "dev": "npm run build:ui && concurrently --kill-others --names \"REACT,EXPRESS\" -c \"bgCyan.black,bgGreen.black\" \"vite\" \"npm run dev:api\"",
     "dev:ui": "vite",
