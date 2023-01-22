@@ -47,8 +47,6 @@ visit project at
 http://localhost:8081 # with hmr
 ```
 
-# 🙋️ Things to know
-
 ## 🌎 URLs
 for react built dist with express serving the dist files as static *(will be used for prod)*
 
