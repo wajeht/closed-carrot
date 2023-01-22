@@ -8,7 +8,8 @@ on:
     branches: [main]
 
 jobs:
-  Format:
+  format:
+    name: Prettier format
     runs-on: ubuntu-latest
 
     strategy:
@@ -29,7 +30,8 @@ jobs:
       - name: Format codes
         run: npm run format
 
-  Lint:
+  lint:
+    name: ESLint
     runs-on: ubuntu-latest
 
     strategy:
@@ -50,7 +52,8 @@ jobs:
       - name: Lint codes
         run: npm run lint
 
-  Test:
+  test:
+    name: Unit tests
     runs-on: ubuntu-latest
 
     strategy:
@@ -71,7 +74,9 @@ jobs:
       - name: Test codes
         run: npm run test
 
-  Deploy:
+  deploy:
+    needs: [format, lint, test]
+    name: Deploy to caprover
     runs-on: ubuntu-latest
 
     strategy:
