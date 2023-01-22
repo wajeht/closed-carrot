@@ -20,12 +20,21 @@ export function getUsers(req, res) {
 
 export function getUser(req, res) {
   // todo
+  return res.success({
+    message: 'implement getUser()',
+  });
 }
 
 export function patchUser(req, res) {
   // todo
+  return res.success({
+    message: 'implement patchUser()',
+  });
 }
 
 export function deleteUser(req, res) {
   // todo
+  return res.success({
+    message: 'implement deleteUser()',
+  });
 }
