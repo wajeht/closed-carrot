@@ -48,13 +48,14 @@ http://localhost:8081 # with hmr
 ```
 
 ## 🌎 URLs
-for react built dist with express serving the dist files as static *(will be used for prod)*
+
+for react built dist with express serving the dist files as static _(will be used for prod)_
 
 ```
 http://localhost:8080
 ```
 
-for real time reloading  when any css or api file changes *(highly recommended)*
+for real time reloading when any css or api file changes _(highly recommended)_
 
 ```
 http://localhost:8081
@@ -92,7 +93,7 @@ to stop docker containers
 $ docker compose down      # make down
 ```
 
-to view docker containers log *(previously must run `docker compose up -d`)*
+to view docker containers log _(previously must run `docker compose up -d`)_
 
 ```bash
 $ docker compose logs -f    # make log
