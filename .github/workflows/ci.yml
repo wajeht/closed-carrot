@@ -95,7 +95,10 @@ jobs:
         with:
           command: c
           cwd: './'
-          files: ./
+          files: |
+            Dockerfile.caprover
+            package.json
+            package-lock.json
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
