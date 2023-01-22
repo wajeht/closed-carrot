@@ -1,5 +1,5 @@
 import React from 'react';
 
-export function PrivacyPolicy() {
+export default function PrivacyPolicy() {
   return <div>Privacy policy</div>;
 }

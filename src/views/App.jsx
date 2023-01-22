@@ -1,32 +1,30 @@
+import './index.css';
+
 import React from 'react';
-import { useState } from 'react';
+
 import { QueryClient, QueryClientProvider } from 'react-query';
-import Users from './components/Users';
-import mariposa from './assets/mariposa.jpeg';
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './pages/Home';
+import ContactUs from './pages/ContactUs';
+import AboutUs from './pages/AboutUs';
+import NotFound from './pages/NotFound';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 const queryClient = new QueryClient();
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="h-screen flex flex-col p-5 items-center gap-5 bg-neutral-200">
-        <p>Edit src/App.jsx and save to test</p>
-        <div className="bg-neutral-50 p-5 rounded-md text-center flex flex-col gap-3">
-          <img src={mariposa} className="mx-auto rounded" alt="mariposa logo" />
-          <h1 className="text-3xl font-bold">Mariposa Tech Hub</h1>
-          <button
-            className="bg-slate-500 hover:bg-slate-700 text-slate-100 p-2 rounded"
-            onClick={() => setCount((count) => count + 1)}
-          >
-            count is {count}
-          </button>
-        </div>
-
-        <p>Edit src/components/Users.jsx and save to test</p>
-        <Users />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </QueryClientProvider>
   );
 }
