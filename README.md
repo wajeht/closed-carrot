@@ -94,12 +94,11 @@ to stop docker containers
 $ docker compose down      # make down
 ```
 
-to view docker containers log *(previously must run `docker compose up -d)*
+to view docker containers log *(previously must run `docker compose up -d`)*
 
 ```bash
 $ docker compose logs -f    # make log
 ```
-
 
 to clean remove docker containers
 
