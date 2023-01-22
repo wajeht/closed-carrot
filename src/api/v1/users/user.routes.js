@@ -8,15 +8,15 @@ import * as userControllers from './user.controllers.js';
 import * as userValidators from './user.validators.js';
 
 /**
- * GET /api/users
+ * GET /api/v1/users
  * @tags users
- * @summary get list of users
+ * @summary get list of all users
  * @security BearerAuth
  */
 user.get('/', catchAsyncHandler(userControllers.getUsers));
 
 /**
- * GET /api/users/{id}
+ * GET /api/v1/users/{id}
  * @tags users
  * @summary get details of a specific user
  * @param {string} id.path.required - the user id
@@ -25,9 +25,9 @@ user.get('/', catchAsyncHandler(userControllers.getUsers));
 user.get('/:id', validator(userValidators.getUser), catchAsyncHandler(userControllers.getUser));
 
 /**
- * GET /api/users/{id}
+ * PATCH /api/v1/users/{id}
  * @tags users
- * @summary get details of a specific user
+ * @summary update details of a specific user
  * @param {string} id.path.required - the user id
  * @security BearerAuth
  */
@@ -38,7 +38,7 @@ user.patch(
 );
 
 /**
- * DELETE /api/users/{id}
+ * DELETE /api/v1/users/{id}
  * @tags users
  * @summary delete a specific user
  * @param {string} id.path.required - the user id

@@ -6,13 +6,13 @@ export default {
   info: {
     title: 'mariposa-tech-hub-website',
     description: 'mariposa-tech-hub-website',
-    termsOfService: `http://localhost:${EXPRESS_PORT}/terms`,
+    termsOfService: `http://localhost:${EXPRESS_PORT}/terms-of-service`,
     contact: {
       name: 'API Support',
-      url: `http://localhost:${EXPRESS_PORT}/contact`,
+      url: `http://localhost:${EXPRESS_PORT}/contact-us`,
     },
     license: {
-      name: 'PRIVATE',
+      name: 'Private',
       url: 'https://github.com/Mariposa-Tech-Hub/mariposa-tech-hub-website/blob/main/LICENSE',
     },
     version: pkg.version,

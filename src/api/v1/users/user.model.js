@@ -3,7 +3,8 @@ import mongoose from 'mongoose';
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    default: null,
+    require: false,
   },
   username: {
     type: String,
@@ -16,11 +17,12 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    require: false,
+    require: true,
   },
   verification_token: {
     type: String,
     unique: true,
+    default: null,
     require: false,
   },
   verified: {
@@ -30,13 +32,13 @@ const UserSchema = new mongoose.Schema({
   },
   verified_at: {
     type: Date,
-    require: false,
     default: null,
+    require: false,
   },
   created_at: {
     type: String,
-    require: false,
     default: new Date().toISOString(),
+    require: false,
   },
 });
 

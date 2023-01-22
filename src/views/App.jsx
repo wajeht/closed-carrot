@@ -14,6 +14,7 @@ import Users from './pages/Users';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import NotFound from './pages/NotFound';
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/login" element={<Login />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
