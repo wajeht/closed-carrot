@@ -48,6 +48,8 @@ http://localhost:8081 # with hmr
 ```
 
 # 🙋️ Things to know
+
+## 🌎 URLs
 for react built dist with express serving the dist files as static *(will be used for prod)*
 
 ```
@@ -70,4 +72,55 @@ for email testing
 
 ```
 http://localhost:8025
+```
+
+## 🐳 Docker/Make commands
+
+to start docker containers with output
+
+```bash
+$ docker compose up        # make up
+```
+
+to start docker containers without output
+
+```bash
+$ docker compose up -d     # make up-d
+```
+
+to stop docker containers
+
+```bash
+$ docker compose down      # make down
+```
+
+to view container log
+
+```bash
+$ docker compose logs -f    # make log
+```
+
+
+to clean remove docker containers
+
+```bash
+$	docker compose down --rmi all   # make clean
+```
+
+to run tests
+
+```bash
+$	docker compose exec app npm run test   # make test
+```
+
+to run lint
+
+```bash
+$	docker compose exec app npm run lint    # make lint
+```
+
+to run formatting code
+
+```bash
+$	docker compose exec app npm run format    # make format
 ```
