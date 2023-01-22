@@ -5,8 +5,9 @@ mariposa tech hub website
 # 📚 Technologies
 
 - **Node** with **Express** for API
-- **MongoDB** for database
+- **MongoDB and Mongoose** for database and modeling
 - **React** with **Vite** tooling for UI
+- **Vitest** for unit testing
 - **[TailwindCSS](https://tailwindcss.com/)** for rapid styling
 - **GitHub Actions** for CI/CD
 - **SwaggerDocs** for API documentation
