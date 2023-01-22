@@ -22,7 +22,7 @@ install docker
 https://www.docker.com/
 ```
 
-copy `.env.example` as `.env`
+copy contents inside of `.env.example` into `.env`
 
 ```bash
 $ cp .env.example .env
