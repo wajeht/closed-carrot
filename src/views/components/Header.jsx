@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header className="bg-slate-300 p-3">
+    <header className="bg-slate-300 p-3 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between">
         <h1>
           <Link to="/">Mariposa Tech Hub</Link>

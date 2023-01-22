@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <footer className="bg-slate-300 p-3">
+    <footer className="bg-slate-300 p-3 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between">
         <span>Copyright © 2022 </span>
         <nav>
