@@ -43,5 +43,30 @@ app            | [EXPRESS] Express server is running at http://localhost:8080
 visit project at
 
 ```
+http://localhost:8081 # with hmr
+```
+
+### Things to know
+for react built dist with express serving the dist files as static
+
+```
+http://localhost:8080
+```
+
+for real time reloading for react when any css or api file changes (highly recommended)
+
+```
 http://localhost:8081
+```
+
+for local mongodb UI
+
+```
+http://localhost:8082
+```
+
+for email testing
+
+```
+http://localhost:8025
 ```
