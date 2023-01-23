@@ -29,9 +29,6 @@ export default function Header() {
               <Link to="/register">Register</Link>
             </li>
             <li>
-              <Link to="/forgot-password">Forgot Password</Link>
-            </li>
-            <li>
               <Link to="/reset-password">Reset Password</Link>
             </li>
           </ul>
