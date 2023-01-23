@@ -12,7 +12,7 @@ export default {
       url: `http://localhost:${EXPRESS_PORT}/contact-us`,
     },
     license: {
-      name: 'Private',
+      name: 'MIT',
       url: 'https://github.com/Mariposa-Tech-Hub/mariposa-tech-hub-website/blob/main/LICENSE',
     },
     version: pkg.version,
