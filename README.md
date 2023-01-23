@@ -124,3 +124,8 @@ to run formatting code
 ```bash
 $ docker compose exec app npm run format    # make format
 ```
+
+
+# © License
+
+Distributed under the MIT License © wajeht. See [LICENSE](https://github.com/Mariposa-Tech-Hub/website/blob/main/LICENSE) for more information.
