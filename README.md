@@ -1,6 +1,6 @@
 # 🦋 Mariposa Tech Hub Website
 
-[![Node.js CI](https://github.com/Mariposa-Tech-Hub/website/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mariposa-Tech-Hub/website/actions/workflows/ci.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://mariposa.jaw.homes/)
+[![Node.js CI](https://github.com/Mariposa-Tech-Hub/website/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mariposa-Tech-Hub/website/actions/workflows/ci.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Mariposa-Tech-Hub/website/blob/main/LICENSE)
 
 mariposa tech hub website
 
