@@ -4,16 +4,23 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <footer className="bg-slate-300 p-3 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between">
-        <span>Copyright © 2022 </span>
-        <nav>
-          <ul className="flex gap-3">
+      <div className="max-w-7xl mx-auto flex  md:flex-row items-center flex-col-reverse gap-5 md:gap-3 justify-between">
+        <div className="w-full text-center md:text-left">
+          Copyright © 2022 Mariposa Tech Hub. All rights reserved
+        </div>
+        <nav className="flex justify-evenly md:justify-end md:gap-3 w-full">
+          {/* law */}
+          <ul className="flex flex-col md:flex-row gap-3">
             <li>
               <Link to="/terms-of-service">Terms of Services</Link>
             </li>
             <li>
               <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
+          </ul>
+
+          {/* social */}
+          <ul className="flex flex-col md:flex-row gap-3">
             <li>
               <a href="https://discord.gg/tXUBzt335A" target="_blank" rel="noreferrer">
                 Discord
