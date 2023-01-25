@@ -91,7 +91,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      - uses: a7ul/tar-action@v1.1.0
+      - uses: a7ul/tar-action@v1.1.2
         with:
           command: c
           cwd: './'
@@ -99,7 +99,7 @@ jobs:
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
-        uses: caprover/deploy-from-github@v1.0.1
+        uses: caprover/deploy-from-github@v1.1.2
         with:
           server: '${{ secrets.CAPROVER_SERVER }}'
           app: '${{ secrets.APP_NAME }}'
