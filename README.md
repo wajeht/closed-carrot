@@ -1,8 +1,8 @@
-# 🦋 Mariposa Tech Hub Website
+# 🥕 Closed Carrot: Amarillo's Tech Hub Tech
 
-[![Node.js CI](https://github.com/Mariposa-Tech-Hub/website/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mariposa-Tech-Hub/website/actions/workflows/ci.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Mariposa-Tech-Hub/website/blob/main/LICENSE)
+[![Node.js CI](https://github.com/closed-carrot/website/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/closed-carrot/website/actions/workflows/ci.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/closed-carrot/website/blob/main/LICENSE)
 
-mariposa tech hub website
+closed-carrot-amarillos-tech-hub
 
 # 📚 Technologies
 
@@ -125,7 +125,6 @@ to run formatting code
 $ docker compose exec app npm run format    # make format
 ```
 
-
 # © License
 
-Distributed under the MIT License © wajeht. See [LICENSE](https://github.com/Mariposa-Tech-Hub/website/blob/main/LICENSE) for more information.
+Distributed under the MIT License © wajeht. See [LICENSE](https://github.com/closed-carrot/website/blob/main/LICENSE) for more information.

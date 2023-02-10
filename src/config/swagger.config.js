@@ -4,8 +4,9 @@ import pkg from '../../package.json' assert { type: 'json' };
 
 export default {
   info: {
-    title: 'mariposa-tech-hub-website',
-    description: 'mariposa-tech-hub-website',
+    // eslint-disable-next-line quotes
+    title: "Closed Carrot: Amarillo's Tech Hub",
+    description: 'closed-carrot-amarillos-tech-hub',
     termsOfService: `http://localhost:${EXPRESS_PORT}/terms-of-service`,
     contact: {
       name: 'API Support',
@@ -13,7 +14,7 @@ export default {
     },
     license: {
       name: 'MIT',
-      url: 'https://github.com/Mariposa-Tech-Hub/mariposa-tech-hub-website/blob/main/LICENSE',
+      url: 'https://github.com/closed-carrot/website/blob/main/LICENSE',
     },
     version: pkg.version,
   },
