@@ -1,4 +1,4 @@
-# 🥕 Closed Carrot: Amarillo's Tech Hub Tech
+# 🥕 Closed Carrot: Amarillo's Tech Hub
 
 [![Node.js CI](https://github.com/closed-carrot/website/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/closed-carrot/website/actions/workflows/ci.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/closed-carrot/website/blob/main/LICENSE)
 
