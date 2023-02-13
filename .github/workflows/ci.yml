@@ -85,6 +85,9 @@ jobs:
     # needs: [format, lint, test]
     name: Deploy to caprover
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     #
 
