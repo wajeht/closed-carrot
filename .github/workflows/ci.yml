@@ -3,7 +3,7 @@ name: CI
 env:
   CONTEXT_DIR: './'
   IMAGE_NAME: ${{ github.repository }}/prod
-  DOCKERFILE: Dockerfile.staging
+  DOCKERFILE: Dockerfile.prod
   CAPROVER_APP: amarillo-tech-hub
   DOCKER_REGISTRY: ghcr.io
 
