@@ -4,7 +4,6 @@ env:
   CONTEXT_DIR: './'
   IMAGE_NAME: ${{ github.repository }}
   DOCKERFILE: Dockerfile.prod
-  CAPROVER_APP: ${{ secrets.CAPROVER_APP }}
   DOCKER_REGISTRY: ghcr.io
 
 on:
@@ -136,6 +135,6 @@ jobs:
         uses: caprover/deploy-from-github@d76580d79952f6841c453bb3ed37ef452b19752c
         with:
           server: ${{ secrets.CAPROVER_HOST }}
-          app: ${{ env.CAPROVER_APP }}
+          app: ${{ secrets.CAPROVER_APP }}
           token: '${{ secrets.CAPROVER_APP_TOKEN }}'
           image: '${{ env.FULL_IMAGE_NAME }}'
