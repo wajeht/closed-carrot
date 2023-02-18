@@ -5,8 +5,8 @@ import pkg from '../../package.json' assert { type: 'json' };
 export default {
   info: {
     // eslint-disable-next-line quotes
-    title: "Closed Carrot: Amarillo's Tech Hub",
-    description: 'closed-carrot-amarillos-tech-hub',
+    title: "Closed Carrot: Amarillo's Tech Hub App",
+    description: 'closed-carrot-amarillos-tech-hub-app',
     termsOfService: `http://localhost:${EXPRESS_PORT}/terms-of-service`,
     contact: {
       name: 'API Support',
@@ -14,7 +14,7 @@ export default {
     },
     license: {
       name: 'MIT',
-      url: 'https://github.com/closed-carrot/website/blob/main/LICENSE',
+      url: 'https://github.com/closed-carrot/app/blob/main/LICENSE',
     },
     version: pkg.version,
   },
