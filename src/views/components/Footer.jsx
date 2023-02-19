@@ -6,7 +6,7 @@ export default function Header() {
     <footer className="bg-slate-300 p-3 shadow-md">
       <div className="max-w-7xl mx-auto flex  md:flex-row items-center flex-col-reverse gap-5 md:gap-3 justify-between">
         <div className="w-full text-center md:text-left">
-          Copyright © 2022 Closed Carrot: Amarillo&apos;s Tech Hub App. All rights reserved
+          Copyright © 2022 Closed Carrot: Amarillo&apos;s Tech Hub. All rights reserved
         </div>
         <nav className="flex justify-evenly md:justify-end md:gap-3 w-full">
           {/* law */}
@@ -27,7 +27,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/closed-carrot/app" target="_blank" rel="noreferrer">
+              <a href="https://github.com/closed-carrot/website" target="_blank" rel="noreferrer">
                 Github
               </a>
             </li>

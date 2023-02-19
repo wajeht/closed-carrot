@@ -6,7 +6,7 @@ export default function Header() {
     <header className="bg-slate-300 p-3 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between">
         <h1>
-          <Link to="/">Closed Carrot: Amarillo&apos;s Tech Hub App</Link>
+          <Link to="/">Closed Carrot: Amarillo&apos;s Tech Hub</Link>
         </h1>
         <nav>
           <ul className="flex gap-3">
