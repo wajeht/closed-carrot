@@ -57,7 +57,7 @@ services:
       - app-network
 
   mailhog:
-    container_name: mailhot
+    container_name: mailhog
     restart: unless-stopped
     image: mailhog/mailhog
     ports:
