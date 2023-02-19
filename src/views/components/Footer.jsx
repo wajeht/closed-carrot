@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-slate-300 p-3 shadow-md">
       <div className="max-w-7xl mx-auto flex  md:flex-row items-center flex-col-reverse gap-5 md:gap-3 justify-between">
         <div className="w-full text-center md:text-left">
-          Copyright © 2022 Closed Carrot: Amarillo&apos;s Tech Hub. All rights reserved
+          Copyright © {currentYear} Closed Carrot: Amarillo&apos;s Tech Hub. All rights reserved
         </div>
         <nav className="flex justify-evenly md:justify-end md:gap-3 w-full">
           {/* law */}
