@@ -6,7 +6,7 @@ export const postContact = [
     .withMessage('email must not be empty!')
     .trim()
     .isEmail()
-    .withMessage('email value must be an email!'),
+    .withMessage('email must be an email!'),
   body('subject')
     .notEmpty()
     .withMessage('subject must not be empty!')
