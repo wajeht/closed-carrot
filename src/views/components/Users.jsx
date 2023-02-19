@@ -4,11 +4,11 @@ import { FaSpinner, FaSkull, FaUserAlt } from 'react-icons/fa';
 import { AiTwotoneMail, AiFillLock } from 'react-icons/ai';
 
 export default function Users() {
-  const { isLoading, error, data } = useQuery('users', async () =>
+  const { loading, error, data } = useQuery('users', async () =>
     fetch('/api/v1/users').then((res) => res.json()),
   );
 
-  if (isLoading) {
+  if (loading) {
     return (
       <div className="flex items-center gap-2">
         <FaSpinner />
