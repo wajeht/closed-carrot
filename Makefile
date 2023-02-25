@@ -13,6 +13,9 @@ down:
 clean:
 	docker compose down --rmi all
 
+wipe:
+	docker system prune -a --volumes
+
 test:
 	docker compose exec app npm run test
 
