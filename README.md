@@ -63,8 +63,10 @@ for real time reloading when any css or api file changes _(highly recommended)_
 http://localhost:8081
 ```
 
-http://localhost:8080/docs/api/
+for api documentation
 
+```
+http://localhost:8080/docs/api/
 ```
 
 for local mongodb UI
@@ -129,16 +131,14 @@ to run formatting code
 $ docker compose exec app npm run format    # make format
 ```
 
-
-
-
-
-
-
-
+# 🛠️ Others
 
 Online PNG compression
+
+```
 https://www.freeconvert.com/compress-png
+```
+
 # © License
 
 Distributed under the MIT License © wajeht. See [LICENSE](https://github.com/closed-carrot/website/blob/main/LICENSE) for more information.
