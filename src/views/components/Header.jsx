@@ -1,5 +1,10 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import { Link } from 'react-router-dom';
+=======
+import { Link, useLocation } from 'react-router-dom';
+import Logo from '../assets/Images/Closed Carrot Logo_Icon_Transparent.png';
+>>>>>>> Stashed changes
 
 export default function Header() {
   return (
