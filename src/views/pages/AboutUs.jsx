@@ -47,8 +47,6 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* // <footer className="bg-[url('../assets/svgs/footer-background.svg')] bg-green-100 bg-contain shadow-md h-[200px]"></footer> */}
-
       <div className=" bg-orange-100">
         <div className=" mx-auto w-full max-w-7xl px-3 py-10">
           <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">

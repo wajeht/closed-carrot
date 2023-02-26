@@ -7,7 +7,6 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    // <footer className="bg-[url('../assets/svgs/footer-background.svg')] bg-green-100 bg-contain shadow-md h-[200px]"></footer>
     <footer className="bg-orange-700 bg-contain py-10 text-white">
       <div className="max-w-7xl mx-auto flex flex-col justify-center gap-5 items-center min-h-full p-3">
         {/* logo */}
