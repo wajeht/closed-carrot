@@ -5,21 +5,18 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: path.join(process.cwd(), '.env') });
 
-// const rollupOptions = {};
+const rollupOptions = {};
 
-// if (process.env.ENV === 'dev' || process.env.ENV === 'development') {
-//   rollupOptions.output = {
-//     entryFileNames: 'assets/[name].js',
-//     chunkFileNames: 'assets/[name].js',
-//     assetFileNames: 'assets/[name][extname]',
-//   };
-// }
+if (process.env.ENV === 'dev' || process.env.ENV === 'development') {
+  rollupOptions.output = {
+    entryFileNames: 'assets/[name].js',
+    chunkFileNames: 'assets/[name].js',
+    assetFileNames: 'assets/[name][extname]',
+  };
+}
 
 export default defineConfig({
   plugins: [react()],
-  // resolve: {
-  //   alias: [{ find: '@', replacement: path.resolve(__dirname, './src/views/') }],
-  // },
   root: './src/views',
   define: {
     'process.env': process.env,
@@ -39,8 +36,7 @@ export default defineConfig({
     outDir: '../../public',
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1600,
-    assetsInlineLimit: '2048',
     emptyOutDir: false,
-    // rollupOptions,
+    rollupOptions,
   },
 });

@@ -6,7 +6,6 @@ COPY ./package.json ./
 COPY ./package-lock.json ./
 
 RUN apk add --no-cache bash \
- && npm update \
  && npm install \
  && npm cache clean --force
 
