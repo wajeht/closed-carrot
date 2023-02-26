@@ -39,6 +39,7 @@ export default defineConfig({
     outDir: '../../public',
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1600,
+    assetsInlineLimit: '2048',
     emptyOutDir: false,
     // rollupOptions,
   },
