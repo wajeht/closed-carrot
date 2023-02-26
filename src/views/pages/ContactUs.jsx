@@ -41,7 +41,7 @@ export default function ContactUs() {
       <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
         <div
           style={{
-            backgroundImage: 'url(../assets/images/marketing/supplies-on-desk.png)',
+            backgroundImage: 'url(assets/images/marketing/supplies-on-desk.png)',
           }}
           className="w-full h-screen  bg-cover bg-center"
         >
