@@ -12,6 +12,6 @@ RUN apk add --no-cache bash \
 
 COPY ./ .
 
-RUN npm run build
+RUN npm run build:ui
 
 CMD ["npm", "run", "start"]
