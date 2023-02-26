@@ -18,7 +18,6 @@ if (process.env.ENV === 'dev' || process.env.ENV === 'development') {
 export default defineConfig({
   plugins: [react()],
   root: './src/views/',
-  base: './public/',
   define: {
     'process.env': process.env,
   },
@@ -35,6 +34,7 @@ export default defineConfig({
   },
   build: {
     outDir: '../../public',
+    assetsDir: './assets',
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1600,
     emptyOutDir: false,
