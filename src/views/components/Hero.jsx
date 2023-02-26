@@ -1,10 +1,28 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
-    <div className="h-[500px] bg-green-100">
-      <div className="max-w-7xl mx-auto p-3">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque repellendus sed laboriosam
-        fugit in incidunt! Inventore, autem placeat, aliquam adipisci sint alias eaque possimus
-        dolores iusto est, at voluptatibus vel!
+    <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
+      <div className="w-full h-screen bg-[url('../assets/images/group-around-whiteboard.png')] bg-cover bg-center">
+        <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
+          <span className="text-white font-bold text-4xl w-1/2 text-center">
+            <span>
+              <span>Unlock your digital potential with</span>
+              <span className="px-1"></span>
+              <span className="underline decoration-4 decoration-orange-500">Closed Carrot</span>.
+            </span>
+            <br />
+            Let us help you achieve your goals.
+          </span>
+
+          <Link
+            to="/contact-us"
+            title="Get started today!"
+            className="px-5 py-3 text bg-orange-500 hover:bg-orange-600 text-white rounded-md"
+          >
+            Get started today!
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ export default function Users() {
       {data.data.map((user) => {
         return (
           <div key={user.id} className="flex flex-col gap-3 bg-slate-200 p-5 rounded-md  shadow-md">
-            <img src={user.avatar} className="rounded-md" />
+            <img src={user.avatar} alt={user.username} className="rounded-md" />
             <div>
               <p className="flex items-center gap-2">
                 <FaUserAlt />

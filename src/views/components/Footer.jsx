@@ -8,12 +8,14 @@ export default function Header() {
 
   return (
     // <footer className="bg-[url('../assets/svgs/footer-background.svg')] bg-green-100 bg-contain shadow-md h-[200px]"></footer>
-    <footer className="bg-green-100 bg-contain h-[200px]">
+    <footer className="bg-orange-700 bg-contain py-10 text-white">
       <div className="max-w-7xl mx-auto flex flex-col justify-center gap-5 items-center min-h-full p-3">
         {/* logo */}
-        <Link to="/">
-          <img className="max-h-[35px]" src={Logo} alt="closed carrot logo" />
-        </Link>
+        <div className="bg-orange-100 rounded-md p-5">
+          <Link to="/">
+            <img className="max-h-[35px]" src={Logo} alt="closed carrot logo" />
+          </Link>
+        </div>
 
         {/* law */}
         <p className="text-center">
@@ -22,12 +24,12 @@ export default function Header() {
         </p>
 
         {/* links */}
-        <nav className="text-sm">
+        <nav className="text-sm font-light">
           <ul className="flex gap-3">
             <Link
               className={
                 location.pathname === '/privacy-policy'
-                  ? 'underline decoration-2 decoration-orange-400'
+                  ? 'underline decoration-2 decoration-white'
                   : null
               }
               to="/privacy-policy"
@@ -38,7 +40,7 @@ export default function Header() {
             <Link
               className={
                 location.pathname === '/terms-of-service'
-                  ? 'underline decoration-2 decoration-orange-400'
+                  ? 'underline decoration-2 decoration-white'
                   : null
               }
               to="/terms-of-service"

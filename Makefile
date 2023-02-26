@@ -20,7 +20,7 @@ test:
 	docker compose exec app npm run test
 
 lint:
-	docker compose exec app npm run lint:fix
+	docker compose exec app npm run lint
 
 format:
-	docker compose exec app npm run format:write
+	docker compose exec app npm run format
