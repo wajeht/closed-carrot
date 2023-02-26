@@ -17,6 +17,9 @@ if (process.env.ENV === 'dev' || process.env.ENV === 'development') {
 
 export default defineConfig({
   plugins: [react()],
+  // resolve: {
+  //   alias: [{ find: '@', replacement: path.resolve(__dirname, './src/views/') }],
+  // },
   root: './src/views',
   define: {
     'process.env': process.env,
