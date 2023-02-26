@@ -1,4 +1,5 @@
-import Cup from '../assets/images/orange-coffee-cup.png';
+import Cup from '../assets/images/marketing/orange-coffee-cup.png';
+
 export default function Marketing() {
   return (
     <div className="mx-auto w-full max-w-7xl px-3 py-10">
