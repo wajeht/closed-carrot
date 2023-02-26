@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import Desk from '/assets/images/marketing/supplies-on-desk.png';
+// import Desk from '/assets/images/marketing/supplies-on-desk.png';
 
 export default function ContactUs() {
   const [subject, setSubject] = useState('');
@@ -41,7 +41,7 @@ export default function ContactUs() {
       <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
         <div
           style={{
-            backgroundImage: `url(${Desk})`,
+            backgroundImage: 'url(../assets/images/marketing/supplies-on-desk.png)',
           }}
           className="w-full h-screen  bg-cover bg-center"
         >
