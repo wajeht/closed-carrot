@@ -9,9 +9,7 @@ COPY ./package-lock.json ./
 
 COPY ./ ./
 
-RUN apk add --no-cache bash \
- && npm install \
- && npm cache clean --force
+RUN npm install
 
 RUN npm run build:ui
 
