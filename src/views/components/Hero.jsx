@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-// import Whiteboard from '../assets/images/group-around-whiteboard.png';
-import Whiteboard from '/assets/images/group-around-whiteboard.png';
+import Whiteboard from '../assets/images/group-around-whiteboard.png';
+// import Whiteboard from '/assets/images/group-around-whiteboard.png';
 
 export default function Hero() {
   return (
