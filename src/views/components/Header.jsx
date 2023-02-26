@@ -6,8 +6,8 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="bg-white h-[100px] p-3">
-      <div className="max-w-7xl mx-auto flex justify-between min-h-full items-center">
+    <header className="bg-white py-10 px-3">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1>
           <Link to="/">
             <img className="max-h-[35px]" src={Logo} alt="closed carrot logo" />
@@ -19,7 +19,7 @@ export default function Header() {
             <li className="max-w-xs">
               <Link
                 className={
-                  location.pathname === '/' ? 'underline decoration-4 decoration-orange-400' : null
+                  location.pathname === '/' ? 'underline decoration-4 decoration-orange-500' : null
                 }
                 to="/"
               >
@@ -35,7 +35,7 @@ export default function Header() {
               <Link
                 className={
                   location.pathname === '/about-us'
-                    ? 'underline decoration-4 decoration-orange-400'
+                    ? 'underline decoration-4 decoration-orange-500'
                     : null
                 }
                 to="/about-us"
@@ -48,7 +48,7 @@ export default function Header() {
               <Link
                 className={
                   location.pathname === '/contact-us'
-                    ? 'underline decoration-4 decoration-orange-400'
+                    ? 'underline decoration-4 decoration-orange-500'
                     : null
                 }
                 to="/contact-us"
