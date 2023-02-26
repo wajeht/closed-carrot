@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 // import Whiteboard from '@/assets/images/marketing/group-around-whiteboard.png';
 import images from '../data/images';
 
-const desk = images.find((i) => i.name === 'supplies-on-desk');
-
-console.log(desk.url);
+const whiteboard = images.find((i) => i.name === 'group-around-whiteboard');
 
 export default function Hero() {
   return (
@@ -12,7 +10,7 @@ export default function Hero() {
       <div
         className="w-full h-screen bg-cover bg-center"
         style={{
-          backgroundImage: `url(${desk.url})`,
+          backgroundImage: `url(${whiteboard.url})`,
         }}
       >
         <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
