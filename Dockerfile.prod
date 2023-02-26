@@ -11,7 +11,7 @@ RUN apk add --no-cache bash \
  && npm install \
  && npm cache clean --force
 
-COPY ./ .
+COPY ./ ./
 
 RUN npm run build:ui
 
