@@ -47,7 +47,7 @@ export default function ContactUs() {
         >
           <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
             <h2 className="text-white font-bold text-4xl w-1/2 text-center">
-              We'd love to hear from you
+              We&apos;d love to hear from you
             </h2>
             <p className="text-white font-light w-1/2 text-center">
               Whether you have a question about features, trials, pricing, need a demo, or anything

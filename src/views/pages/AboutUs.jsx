@@ -41,7 +41,7 @@ export default function AboutUs() {
           <p>
             Thank you for choosing Closed Carrot: Amarillo Tech Hub as your trusted partner in
             achieving your digital goals. We are excited to work with you and help you navigate the
-            complex world of technology to realize your business's full potential.
+            complex world of technology to realize your business&apos;s full potential.
           </p>
           <br />
         </div>
