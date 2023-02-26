@@ -10,6 +10,9 @@ log:
 down:
 	docker compose down
 
+build-ui:
+	docker compose exec app npm run build:ui
+
 clean:
 	docker compose down --rmi all
 
