@@ -39,7 +39,6 @@ export default defineConfig({
   },
   build: {
     outDir: '../../public',
-    assetsDir: './assets',
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1600,
     emptyOutDir: false,
