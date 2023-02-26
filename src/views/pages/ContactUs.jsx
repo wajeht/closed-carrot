@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import desk from '@/assets/images/marketing/supplies-on-desk.png';
+// import desk from '@/assets/images/marketing/supplies-on-desk.png';
+const desk = new URL('../assets/images/marketing/supplies-on-desk.png', import.meta.url).href;
 
 export default function ContactUs() {
   const [subject, setSubject] = useState('');
