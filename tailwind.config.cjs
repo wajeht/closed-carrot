@@ -6,6 +6,9 @@ module.exports = {
   content: ['./src/views/index.html', './src/views/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        desk: "url('assets/images/marketing/supplies-on-desk.png')",
+      },
       backdropBlur: {
         xs: '2px',
       },

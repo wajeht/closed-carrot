@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-// import desk from '@/assets/images/marketing/supplies-on-desk.png';
-const desk = new URL('../assets/images/marketing/supplies-on-desk.png', import.meta.url).href;
-
 export default function ContactUs() {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
@@ -40,12 +37,7 @@ export default function ContactUs() {
   return (
     <>
       <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
-        <div
-          style={{
-            backgroundImage: `url(${desk})`,
-          }}
-          className="w-full h-screen  bg-cover bg-center"
-        >
+        <div className="w-full h-screen bg-desk  bg-cover bg-center">
           <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
             <h2 className="text-white font-bold text-4xl w-1/2 text-center">
               We&apos;d love to hear from you
