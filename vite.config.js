@@ -17,7 +17,8 @@ if (process.env.ENV === 'dev' || process.env.ENV === 'development') {
 
 export default defineConfig({
   plugins: [react()],
-  root: './src/views',
+  root: './src/views/',
+  base: './public/',
   define: {
     'process.env': process.env,
   },
