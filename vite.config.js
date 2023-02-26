@@ -21,6 +21,11 @@ export default defineConfig({
   define: {
     'process.env': process.env,
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src/views/'),
+    },
+  },
   server: {
     host: '0.0.0.0',
     port: process.env.REACT_PORT,
