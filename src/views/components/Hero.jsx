@@ -7,7 +7,7 @@ export default function Hero() {
       <div
         className="w-full h-screen bg-cover bg-center"
         style={{
-          backgroundImage: `url(${Whiteboard})`,
+          backgroundImage: 'url(assets/images/marketing/group-around-whiteboard.png)',
         }}
       >
         <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
