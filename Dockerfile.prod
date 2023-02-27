@@ -9,8 +9,6 @@ COPY ./package-lock.json ./
 
 COPY ./ ./
 
-RUN npm install
-
-RUN npm run build:ui
+npm install --production
 
 CMD ["npm", "run", "start"]
