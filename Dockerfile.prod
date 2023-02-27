@@ -9,6 +9,6 @@ COPY ./package-lock.json ./
 
 COPY ./ ./
 
-RUN npm install --production
+RUN npm install
 
 CMD ["npm", "run", "start"]
