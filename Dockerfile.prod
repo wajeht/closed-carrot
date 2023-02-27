@@ -11,6 +11,4 @@ COPY ./ ./
 
 RUN npm install
 
-RUN npm run build:ui
-
 CMD ["npm", "run", "start"]
