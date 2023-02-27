@@ -1,6 +1,6 @@
-import Ipad from '@/assets/images/marketing/woman-on-ipad.png';
-import Mic from '@/assets/images/marketing/podcast-man-and-woman.png';
-import Computer from '@/assets/images/marketing/group-around-computer.png';
+import Ipad from '../assets/images/marketing/woman-on-ipad.png';
+import Mic from '../assets/images/marketing/podcast-man-and-woman.png';
+import Computer from '../assets/images/marketing/group-around-computer.png';
 
 export default function CoreValues() {
   return (
