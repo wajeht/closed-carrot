@@ -1,6 +1,6 @@
-import Ipad from '../assets/images/marketing/woman-on-ipad.png';
-import Mic from '../assets/images/marketing/podcast-man-and-woman.png';
-import Computer from '../assets/images/marketing/group-around-computer.png';
+import ipad from '../assets/images/marketing/woman-on-ipad.png';
+import mic from '../assets/images/marketing/podcast-man-and-woman.png';
+import computer from '../assets/images/marketing/group-around-computer.png';
 
 export default function CoreValues() {
   return (
@@ -13,7 +13,7 @@ export default function CoreValues() {
         <br />
         <div className="flex gap-5 ">
           <div className="bg-white rounded-md p-5 shadow-md">
-            <img src={Ipad} alt="woman on ipad" />
+            <img src={ipad} alt="woman on ipad" />
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Mission</h2>
               <p>
@@ -26,7 +26,7 @@ export default function CoreValues() {
           </div>
 
           <div className="bg-white rounded-md p-5 shadow-md">
-            <img src={Mic} alt="podcast man and woman" />
+            <img src={mic} alt="podcast man and woman" />
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Plan</h2>
               <p>
@@ -39,7 +39,7 @@ export default function CoreValues() {
           </div>
 
           <div className="bg-white rounded-md p-5 shadow-md">
-            <img src={Computer} alt="ground around computer" />
+            <img src={computer} alt="ground around computer" />
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Vision</h2>
               <p>
