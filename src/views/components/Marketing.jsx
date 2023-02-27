@@ -1,4 +1,4 @@
-import Cup from '../assets/images/marketing/orange-coffee-cup.png';
+import cup from '../assets/images/marketing/orange-coffee-cup.png';
 
 export default function Marketing() {
   return (
@@ -6,7 +6,7 @@ export default function Marketing() {
       <div className="grid grid-cols-3 gap-6">
         {/* image */}
         <div>
-          <img src={Cup} alt="" />
+          <img src={cup} alt="" />
         </div>
 
         {/* words */}
