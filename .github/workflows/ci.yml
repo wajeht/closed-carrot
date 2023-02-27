@@ -91,12 +91,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm i
-
-      - name: Print new build number
-        run: npm run build:ui
-
       - uses: a7ul/tar-action@v1.1.2
         with:
           command: c

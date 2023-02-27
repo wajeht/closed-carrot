@@ -1,15 +1,9 @@
 import { Link } from 'react-router-dom';
-import whiteboard from '../assets/images/marketing/group-around-whiteboard.png';
 
 export default function Hero() {
   return (
     <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
-      <div
-        className="w-full h-screen bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${whiteboard})`,
-        }}
-      >
+      <div className="w-full h-screen bg-cover bg-center bg-white-board">
         <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
           <span className="text-white font-bold text-4xl w-1/2 text-center">
             <span>

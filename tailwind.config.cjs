@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         desk: "url('assets/images/marketing/supplies-on-desk.png')",
+        ['white-board']: "url('assets/images/marketing/group-around-whiteboard.png')",
       },
       backdropBlur: {
         xs: '2px',
