@@ -141,16 +141,16 @@ export default function ContactUs() {
             {/* phone */}
             <div className="flex  gap-5">
               <span className="text-5xl">☎️</span>
-              <div>+1 (123) 456-7890</div>
+              <div>+1 (806)-881-6810 </div>
             </div>
 
             {/* address */}
             <div className="flex gap-5">
               <span className="text-5xl">📍</span>
               <div>
-                A108 Adam Street
+                701 SE 10th,
                 <br />
-                New York, NY 535022
+                Amarillo, TX 79101
               </div>
             </div>
           </div>
