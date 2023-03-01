@@ -12,17 +12,38 @@ export default function TermsOfService() {
       </h4>
       <br />
 
-      <p>Last updated: March 01, 2023</p>
+      <p className="text-2xl font-bold text-left  decoration-3 decoration-orange-500 underline-offset-4">
+        Last updated: March 01, 2023
+      </p>
+
       <p>Please read these terms and conditions carefully before using Our Service.</p>
-      <h1>Interpretation and Definitions</h1>
-      <h2>Interpretation</h2>
+      <br />
+
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Interpretation and Definitions
+      </h2>
+      <br />
+
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Interpretation
+      </h2>
+      <br />
       <p>
         The words of which the initial letter is capitalized have meanings defined under the
         following conditions. The following definitions shall have the same meaning regardless of
         whether they appear in singular or in plural.
       </p>
-      <h2>Definitions</h2>
-      <p>For the purposes of these Terms and Conditions:</p>
+      <br />
+
+      <h2>
+        <p className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+          Definitions:
+        </p>{' '}
+        <p>For the purposes of these Terms and Conditions:</p>
+      </h2>
+
+      <br />
+
       <ul>
         <li>
           <p>
@@ -32,28 +53,33 @@ export default function TermsOfService() {
             directors or other managing authority.
           </p>
         </li>
+        <br />
         <li>
           <p>
-            <strong>Country</strong> refers to: Texas, United States
+            <strong>Country</strong> refers to: United States
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;,
             &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Closed Carrot.
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>Device</strong> means any device that can access the Service such as a computer,
             a cellphone or a digital tablet.
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>Service</strong> refers to the Website.
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these
@@ -66,6 +92,7 @@ export default function TermsOfService() {
             .
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>Third-party Social Media Service</strong> means any services or content
@@ -73,6 +100,7 @@ export default function TermsOfService() {
             be displayed, included or made available by the Service.
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>Website</strong> refers to Closed Carrot, accessible from{' '}
@@ -81,6 +109,7 @@ export default function TermsOfService() {
             </a>
           </p>
         </li>
+        <br />
         <li>
           <p>
             <strong>You</strong> means the individual accessing or using the Service, or the
@@ -88,27 +117,34 @@ export default function TermsOfService() {
             the Service, as applicable.
           </p>
         </li>
+        <br />
       </ul>
-      <h1>Acknowledgment</h1>
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Acknowledgement
+      </h2>
       <p>
         These are the Terms and Conditions governing the use of this Service and the agreement that
         operates between You and the Company. These Terms and Conditions set out the rights and
         obligations of all users regarding the use of the Service.
       </p>
+      <br />
       <p>
         Your access to and use of the Service is conditioned on Your acceptance of and compliance
         with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and
         others who access or use the Service.
       </p>
+      <br />
       <p>
         By accessing or using the Service You agree to be bound by these Terms and Conditions. If
         You disagree with any part of these Terms and Conditions then You may not access the
         Service.
       </p>
+      <br />
       <p>
         You represent that you are over the age of 18. The Company does not permit those under 18 to
         use the Service.
       </p>
+      <br />
       <p>
         Your access to and use of the Service is also conditioned on Your acceptance of and
         compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies
@@ -116,11 +152,15 @@ export default function TermsOfService() {
         use the Application or the Website and tells You about Your privacy rights and how the law
         protects You. Please read Our Privacy Policy carefully before using Our Service.
       </p>
-      <h1>Links to Other Websites</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Links to Other Websites
+      </h2>
       <p>
         Our Service may contain links to third-party web sites or services that are not owned or
         controlled by the Company.
       </p>
+      <br />
       <p>
         The Company has no control over, and assumes no responsibility for, the content, privacy
         policies, or practices of any third party web sites or services. You further acknowledge and
@@ -129,11 +169,15 @@ export default function TermsOfService() {
         reliance on any such content, goods or services available on or through any such web sites
         or services.
       </p>
+      <br />
       <p>
         We strongly advise You to read the terms and conditions and privacy policies of any
         third-party web sites or services that You visit.
       </p>
-      <h1>Termination</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Termination
+      </h2>
       <p>
         We may terminate or suspend Your access immediately, without prior notice or liability, for
         any reason whatsoever, including without limitation if You breach these Terms and
@@ -142,14 +186,19 @@ export default function TermsOfService() {
         hacker's arsenal, a vulnerability unknown to the software developer that allows for
         undetectable and unrestricted access.
       </p>
+      <br />
       <p>Upon termination, Your right to use the Service will cease immediately.</p>
-      <h1>Limitation of Liability</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Limitation of Liability
+      </h2>
       <p>
         Notwithstanding any damages that You might incur, the entire liability of the Company and
         any of its suppliers under any provision of this Terms and Your exclusive remedy for all of
         the foregoing shall be limited to the amount actually paid by You through the Service or 100
         USD if You haven't purchased anything through the Service.
       </p>
+      <br />
       <p>
         To the maximum extent permitted by applicable law, in no event shall the Company or its
         suppliers be liable for any special, incidental, indirect, or consequential damages
@@ -160,13 +209,17 @@ export default function TermsOfService() {
         any provision of this Terms), even if the Company or any supplier has been advised of the
         possibility of such damages and even if the remedy fails of its essential purpose.
       </p>
+      <br />
       <p>
         Some states do not allow the exclusion of implied warranties or limitation of liability for
         incidental or consequential damages, which means that some of the above limitations may not
         apply. In these states, each party's liability will be limited to the greatest extent
         permitted by law.
       </p>
-      <h1>&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer
+      </h2>
       <p>
         The Service is provided to You &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; and with all
         faults and defects without warranty of any kind. To the maximum extent permitted under
@@ -182,6 +235,7 @@ export default function TermsOfService() {
         meet any performance or reliability standards or be error free or that any errors or defects
         can or will be corrected.
       </p>
+      <br />
       <p>
         Without limiting the foregoing, neither the Company nor any of the company's provider makes
         any representation or warranty of any kind, express or implied: (i) as to the operation or
@@ -192,6 +246,7 @@ export default function TermsOfService() {
         behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs
         or other harmful components.
       </p>
+      <br />
       <p>
         Some jurisdictions do not allow the exclusion of certain types of warranties or limitations
         on applicable statutory rights of a consumer, so some or all of the above exclusions and
@@ -199,30 +254,45 @@ export default function TermsOfService() {
         forth in this section shall be applied to the greatest extent enforceable under applicable
         law.
       </p>
-      <h1>Governing Law</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Governing Law
+      </h2>
       <p>
         The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and
         Your use of the Service. Your use of the Application may also be subject to other local,
         state, national, or international laws.
       </p>
-      <h1>Disputes Resolution</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Disputes Resolution
+      </h2>
       <p>
         If You have any concern or dispute about the Service, You agree to first try to resolve the
         dispute informally by contacting the Company.
       </p>
-      <h1>For European Union (EU) Users</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        For European Union (EU) Users
+      </h2>
       <p>
         If You are a European Union consumer, you will benefit from any mandatory provisions of the
         law of the country in which you are resident in.
       </p>
-      <h1>United States Legal Compliance</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        United States Legal Compliance
+      </h2>
       <p>
         You represent and warrant that (i) You are not located in a country that is subject to the
         United States government embargo, or that has been designated by the United States
         government as a &quot;terrorist supporting&quot; country, and (ii) You are not listed on any
         United States government list of prohibited or restricted parties.
       </p>
-      <h1>Severability and Waiver</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Severability and Waiver
+      </h2>
       <h2>Severability</h2>
       <p>
         If any provision of these Terms is held to be unenforceable or invalid, such provision will
@@ -230,6 +300,7 @@ export default function TermsOfService() {
         extent possible under applicable law and the remaining provisions will continue in full
         force and effect.
       </p>
+      <br />
       <h2>Waiver</h2>
       <p>
         Except as provided herein, the failure to exercise a right or to require performance of an
@@ -237,30 +308,40 @@ export default function TermsOfService() {
         require such performance at any time thereafter nor shall the waiver of a breach constitute
         a waiver of any subsequent breach.
       </p>
-      <h1>Translation Interpretation</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Translation Interpretation
+      </h2>
       <p>
         These Terms and Conditions may have been translated if We have made them available to You on
         our Service. You agree that the original English text shall prevail in the case of a
         dispute.
       </p>
-      <h1>Changes to These Terms and Conditions</h1>
+      <br />
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Changes to These Terms and Conditions
+      </h2>
       <p>
         We reserve the right, at Our sole discretion, to modify or replace these Terms at any time.
         If a revision is material We will make reasonable efforts to provide at least 30 days'
         notice prior to any new terms taking effect. What constitutes a material change will be
         determined at Our sole discretion.
       </p>
+      <br />
       <p>
         By continuing to access or use Our Service after those revisions become effective, You agree
         to be bound by the revised terms. If You do not agree to the new terms, in whole or in part,
         please stop using the website and the Service.
       </p>
-      <h1>Contact Us</h1>
+      <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
+        Contact Us
+      </h2>
       <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
       <ul>
         <li>
           <p>By email: closedcarrot@gmail.com</p>
         </li>
+        <br />
         <li>
           <p>
             By visiting this page on our website:{' '}
@@ -273,6 +354,7 @@ export default function TermsOfService() {
             </a>
           </p>
         </li>
+        <br />
       </ul>
 
       <br />
