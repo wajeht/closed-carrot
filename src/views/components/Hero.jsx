@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
       <div className="w-full h-screen bg-cover bg-center bg-white-board">
         <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
-          <span className="text-white font-bold text-4xl w-1/2 text-center">
+          <span className="text-white font-bold text-4xl mx-1 md:w-1/2 text-center">
             <span>
               <span>Unlock your digital potential with</span>
               <span className="px-1"></span>

@@ -6,7 +6,7 @@ export default function NormalLayout({ children }) {
   return (
     <div className="flex flex-col h-screen">
       <Header />
-      <div className="flex-1">{children}</div>
+      <div className="flex-col md:flex-1 md:flex-row">{children}</div>
       <Footer />
     </div>
   );

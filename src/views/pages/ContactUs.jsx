@@ -60,9 +60,9 @@ export default function ContactUs() {
         <br />
         <br />
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid md:grid-cols-3 gap-3">
           {/* form */}
-          <div className="col-span-2">
+          <div className="md:col-span-2">
             <form
               className="rounded-md flex flex-col gap-3  max-w-2xl w-full"
               onSubmit={handleSubmit}
@@ -131,7 +131,7 @@ export default function ContactUs() {
           </div>
 
           {/* others */}
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col items-center md:items-start gap-5">
             {/* email */}
             <div className="flex  gap-5">
               <span className="text-5xl">💌</span>
@@ -145,7 +145,7 @@ export default function ContactUs() {
             </div>
 
             {/* address */}
-            <div className="flex  gap-5">
+            <div className="flex gap-5">
               <span className="text-5xl">📍</span>
               <div>
                 A108 Adam Street
