@@ -17,13 +17,10 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Mission</h2>
               <p>
-                The Closed Carrot's mission is to provide students in Amarillo, Texas with hands-on
-                experience in the tech industry through collaborative and innovative projects. They
-                strive to foster an inclusive community of technology enthusiasts committed to
-                developing their skills through teamwork, mentorship, and professional development
-                opportunities. Their goal is to create a supportive and engaging environment where
-                students can explore their interests, pursue their passions, and develop the skills
-                and knowledge needed to succeed in the rapidly evolving tech industry.
+                The Closed Carrot fosters a collaborative tech community in Amarillo, Texas through
+                hands-on innovation, offering professional development, mentorship, and teamwork.
+                Our ultimate mission: empower students to pursue their tech passions and succeed in
+                a constantly evolving industry.
               </p>
             </div>
           </div>
@@ -33,14 +30,11 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Plan</h2>
               <p>
-                The organization's intention is to empower students in Amarillo, Texas with the
-                necessary skills, knowledge, and opportunities to thrive in the tech industry. They
-                aim to inspire students to pursue their interests and passions in technology through
-                a supportive and collaborative environment. The organization values innovation,
-                creativity, and continuous learning, and strives to create a culture of growth,
-                competence, and stability through their projects, events, and initiatives. Their
-                goal is to contribute to the growth and success of the tech industry in Amarillo and
-                beyond.
+                The intention of this organization is to inspire and empower Amarillo students with
+                tech skills, knowledge, and opportunities, in a collaborative and creative
+                community. We value innovation and learning, promoting growth and competence through
+                events, initiatives, and projects. Ultimately, we aim to contribute to the growth
+                and success of the tech industry in Amarillo and beyond.
               </p>
             </div>
           </div>
@@ -50,14 +44,9 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Vision</h2>
               <p>
-                The Amarillo Tech Co-op's vision is to be a driving force in the development of a
-                thriving and innovative tech ecosystem in Amarillo, Texas. They envision a future
-                where students have access to resources, opportunities, and support needed to pursue
-                their dreams and build successful careers in the tech industry. The organization
-                aspires to create a community that values lifelong learning, creativity, and
-                collaboration, and values speed, surprise, and violence of action. Their ultimate
-                goal is to inspire and empower the next generation of tech leaders who will shape
-                the future of Amarillo and beyond.
+                We empower students in Texas with resources and support for successful tech careers,
+                valuing creativity, collaboration, and lifelong learning. Our ultimate goal is to
+                inspire the next generation of tech leaders who will shape Amarillo and beyond.
               </p>
             </div>
           </div>
