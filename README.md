@@ -16,6 +16,20 @@ closed carrot: amarillo's tech hub website
 - **[React Query](https://react-query-v3.tanstack.com/)** for data fetching on React
 - **[react-icons](https://react-icons.github.io/react-icons/)** for icons
 
+## 🏭 Enviroment
+staging/dev environment
+
+```
+https://closed-carrot.jaw.homes/
+```
+
+production environment
+
+```
+https://closedcarrot.com/
+```
+
+
 # 👨‍💻 Getting started
 
 install docker
