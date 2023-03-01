@@ -47,4 +47,10 @@ export default [
     image: '../assets/Images/Headshots/netty.jpeg',
     bio: 'Netty is an experienced assistant project manager with strong expertise in Excel, I have a proven track record of success in managing and coordinating projects, analyzing data, and providing insights to support decision-making. I am skilled in developing project plans, timelines, and budgets, and in tracking progress against established goals and objectives. With my advanced proficiency in Excel, I am able to manipulate and analyze large data sets, create dynamic charts and graphs, and generate reports that effectively communicate project status and performance. I am a highly organized and detail-oriented individual with excellent communication, problem-solving, and interpersonal skills, and I thrive in fast-paced, deadline-driven environments. I am committed to delivering high-quality work and to collaborating with stakeholders across teams and functions to achieve project success',
   },
+  {
+    name: 'Gerardo',
+    title: 'Full-stack Developer',
+    image: '../assets/Images/Headshots/gerardo.jpg',
+    bio: 'Gerardo is the Lead Software Engineer for a tech startup that develops software for private security firms. He obtained an Associate’s Degree in Engineering Computer Science from Amarillo College, and continued his Computer Science Major at West Texas A&M University. Gerardo switched career goals to pursue his passion of helping others and served as a Catholic Missionary in the Central American country of Nicaragua for ten years. He returned to Texas in 2020 and has since then worked as a Full Stack Web Developer. Gerardo’s expertise is in Backend Web Development specializing in MERN Stack applications, API design, SQL & Mongo Database development, Cloud Micro-Services and Infrastructure, and CI/CD.    ',
+  },
 ];
