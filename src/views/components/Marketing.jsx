@@ -3,6 +3,14 @@ import cup from '../assets/images/marketing/orange-coffee-cup.png';
 export default function Marketing() {
   return (
     <div className="mx-auto w-full max-w-7xl px-3 py-10">
+      {/* title */}
+      <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What about you?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </h2>
+      <br />
+      <br />
+
+      {/* paragraph */}
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
         {/* image */}
         <div>
@@ -10,8 +18,8 @@ export default function Marketing() {
         </div>
 
         {/* words */}
-        <h2 className="font-bold text-xl text-center mb-2">What About You??</h2>
-        <div className="col-span md:col-span-2">
+
+        <div className="col-span-2">
           <p className="mb-3">
             Are you a student in Amarillo looking to develop your tech skills and gain hands-on
             experience in a supportive and collaborative community? Have you considered joining the
