@@ -11,7 +11,7 @@ export default function CoreValues() {
         </h2>
         <br />
         <br />
-        <div className="flex gap-5 ">
+        <div className="flex flex-col md:flex-row gap-5 ">
           <div className="bg-white rounded-md p-5 shadow-md">
             <img src={ipad} alt="woman on ipad" />
             <div>

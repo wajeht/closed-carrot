@@ -3,14 +3,14 @@ import cup from '../assets/images/marketing/orange-coffee-cup.png';
 export default function Marketing() {
   return (
     <div className="mx-auto w-full max-w-7xl px-3 py-10">
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
         {/* image */}
         <div>
           <img src={cup} alt="" />
         </div>
 
         {/* words */}
-        <div className="col-span-2">
+        <div className="col-span md:col-span-2">
           <p className="mb-3">
             Are you a student in Amarillo looking to develop your tech skills and gain hands-on
             experience in a supportive and collaborative community? Have you considered joining the
