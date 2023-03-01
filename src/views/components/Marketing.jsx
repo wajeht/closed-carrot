@@ -1,4 +1,4 @@
-import cup from '../assets/Images/marketing/orange-coffee-cup.png';
+import cup from '../assets/images/marketing/orange-coffee-cup.png';
 
 export default function Marketing() {
   return (
