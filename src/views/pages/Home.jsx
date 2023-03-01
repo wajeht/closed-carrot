@@ -10,8 +10,8 @@ export default function Home() {
       <Hero />
       <CoreValues />
       <Marketing />
-      <div className="bg-green-50 min-h-[500px]"></div>
-      <div className="bg-orange-50 min-h-[500px]"></div>
+      {/* <div className="bg-green-50 min-h-[500px]"></div>
+      <div className="bg-orange-50 min-h-[500px]"></div> */}
     </>
   );
 }

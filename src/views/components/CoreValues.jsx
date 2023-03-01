@@ -1,6 +1,6 @@
-import ipad from '../assets/images/marketing/woman-on-ipad.png';
-import mic from '../assets/images/marketing/podcast-man-and-woman.png';
-import computer from '../assets/images/marketing/group-around-computer.png';
+import ipad from '../assets/Images/marketing/woman-on-ipad.png';
+import mic from '../assets/Images/marketing/podcast-man-and-woman.png';
+import computer from '../assets/Images/marketing/group-around-computer.png';
 
 export default function CoreValues() {
   return (
@@ -17,10 +17,13 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Mission</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, corporis
-                accusamus. Itaque voluptatum repellendus quisquam excepturi possimus ipsam ea
-                commodi numquam, perspiciatis neque aliquid facere velit adipisci blanditiis quod
-                eaque.
+                The Closed Carrot's mission is to provide students in Amarillo, Texas with hands-on
+                experience in the tech industry through collaborative and innovative projects. They
+                strive to foster an inclusive community of technology enthusiasts committed to
+                developing their skills through teamwork, mentorship, and professional development
+                opportunities. Their goal is to create a supportive and engaging environment where
+                students can explore their interests, pursue their passions, and develop the skills
+                and knowledge needed to succeed in the rapidly evolving tech industry.
               </p>
             </div>
           </div>
@@ -30,10 +33,14 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Plan</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, corporis
-                accusamus. Itaque voluptatum repellendus quisquam excepturi possimus ipsam ea
-                commodi numquam, perspiciatis neque aliquid facere velit adipisci blanditiis quod
-                eaque.
+                The organization's intention is to empower students in Amarillo, Texas with the
+                necessary skills, knowledge, and opportunities to thrive in the tech industry. They
+                aim to inspire students to pursue their interests and passions in technology through
+                a supportive and collaborative environment. The organization values innovation,
+                creativity, and continuous learning, and strives to create a culture of growth,
+                competence, and stability through their projects, events, and initiatives. Their
+                goal is to contribute to the growth and success of the tech industry in Amarillo and
+                beyond.
               </p>
             </div>
           </div>
@@ -43,10 +50,14 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Vision</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, corporis
-                accusamus. Itaque voluptatum repellendus quisquam excepturi possimus ipsam ea
-                commodi numquam, perspiciatis neque aliquid facere velit adipisci blanditiis quod
-                eaque.
+                The Amarillo Tech Co-op's vision is to be a driving force in the development of a
+                thriving and innovative tech ecosystem in Amarillo, Texas. They envision a future
+                where students have access to resources, opportunities, and support needed to pursue
+                their dreams and build successful careers in the tech industry. The organization
+                aspires to create a community that values lifelong learning, creativity, and
+                collaboration, and values speed, surprise, and violence of action. Their ultimate
+                goal is to inspire and empower the next generation of tech leaders who will shape
+                the future of Amarillo and beyond.
               </p>
             </div>
           </div>
