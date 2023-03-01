@@ -122,7 +122,7 @@ export default function ContactUs() {
 
               {/* login */}
               <button
-                className="px-5 py-3 text bg-orange-500 hover:bg-orange-600 text-white rounded-md"
+                className="px-5 py-3 text bg-orange-700 hover:bg-orange-500 text-white rounded-md"
                 disabled={loading}
               >
                 {loading === true ? 'Sending...' : 'Send'}
