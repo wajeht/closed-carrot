@@ -10,5 +10,6 @@ COPY ./package-lock.json ./
 COPY ./ ./
 
 RUN npm install
+RUN npm npm build
 
 CMD ["npm", "run", "start"]
