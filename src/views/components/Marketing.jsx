@@ -10,6 +10,7 @@ export default function Marketing() {
         </div>
 
         {/* words */}
+        <h2 className="font-bold text-xl text-center mb-2">What About You??</h2>
         <div className="col-span md:col-span-2">
           <p className="mb-3">
             Are you a student in Amarillo looking to develop your tech skills and gain hands-on
