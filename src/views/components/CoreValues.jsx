@@ -30,14 +30,11 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Plan</h2>
               <p>
-                Our Community
-                <br />
                 Closed Carrot is a self-governed membership organization based in the Amarillo area.
-                Members of the tech hub. <br /> We want to inspire and empower businesses and
-                technology professionals. We aim to contribute to the growth and success of the tech
-                industry in Amarillo and beyond.
-                <br /> At Closed Carrot, the tech hub allows space for creativity, learning, and
-                leadership.
+                Members of the tech hub. We want to inspire and empower businesses and technology
+                professionals. We aim to contribute to the growth and success of the tech industry
+                in Amarillo and beyond. At Closed Carrot, the tech hub allows space for creativity,
+                learning, and leadership.
               </p>
             </div>
           </div>
