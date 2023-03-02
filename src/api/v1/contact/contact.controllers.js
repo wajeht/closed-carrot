@@ -1,5 +1,6 @@
 import Mail from '../../../utils/mail.js';
 import { saveContact } from './contact.services.js';
+import Discord from '../../../utils/discord.js';
 
 export async function postContact(req, res) {
   const { email, subject, message } = req.body;
@@ -11,6 +12,8 @@ export async function postContact(req, res) {
   });
 
   await saveContact(email, subject, message);
+
+  await Discord.send({ message: subject, object: req.body });
 
   return res.success({ message: 'your message has been sent successfully!' });
 }
