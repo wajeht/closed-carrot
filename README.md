@@ -156,5 +156,3 @@ https://www.freeconvert.com/compress-png
 # © License
 
 Distributed under the MIT License © wajeht. See [LICENSE](https://github.com/closed-carrot/website/blob/main/LICENSE) for more information.
-
-# Test
