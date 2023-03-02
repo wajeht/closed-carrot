@@ -14,36 +14,30 @@ export default function AboutUs() {
           <br />
           <br />
           <p>
-            The Closed Carrot is a student-led organization in Amarillo, Texas that aims to provide
-            hands-on experience in the tech industry through innovative projects. They foster an
-            inclusive community of passionate individuals committed to developing their skills
-            through teamwork, mentorship, and professional development. Their goal is to create a
-            supportive and engaging environment for students to explore their interests, pursue
-            their passions, and develop the skills and knowledge needed to succeed in the fast-paced
-            tech industry.
+            Closed Carrot is a group of technology professionals in Amarillo, Texas, providing
+            hands-on tech industry experience. We foster an inclusive community of passionate
+            individuals committed to developing their skills through teamwork, mentorship, and
+            professional development. We aim to create a supportive and engaging environment for
+            members to explore their interests, pursue their passions, and develop the skills and
+            knowledge needed to succeed in the fast-paced tech industry.
           </p>
           <br />
           <p>
-            This student-led cooperative brings a fresh perspective to the tech industry by
+            As a self-governed cooperative, we bring a fresh perspective to the tech industry by
             combining innovation with industry trends and best practices. With experts in software
-            development, web design, digital marketing, and data analytics, they offer a range of
-            services tailored to their clients' needs. They value collaboration and work closely
-            with their clients to co-create technology solutions that are effective and efficient.
+            development, web design, digital marketing, and data analytics, we offer various
+            services tailored to our client's needs. We value collaboration and work closely with
+            our clients to co-create technology solutions that are effective and efficient.
           </p>
           <br />
           <p>
-            Closed Carrot: Amarillo Tech Hub is deeply committed to promoting digital literacy and
-            access to technology in the local community. They believe in technology as a tool for
-            positive change and operate their business in an environmentally responsible manner. The
-            organization is committed to sustainability and minimizes its impact on the environment
-            by utilizing green practices wherever possible.
+            Closed Carrot: Amarillo’s Tech Hub is deeply committed to promoting digital literacy and
+            access to technology in the local community. We believe in technology as a tool for
+            positive change and operate our business in an environmentally responsible manner.
+            Members are committed to sustainability and minimizing its environmental impact by
+            utilizing green practices wherever possible.
           </p>
-          <br />
-          <p>
-            Thank you for choosing Closed Carrot: Amarillo Tech Hub as your trusted partner in
-            achieving your digital goals. We are excited to work with you and help you navigate the
-            complex world of technology to realize your business&apos;s full potential.
-          </p>
+
           <br />
         </div>
       </div>

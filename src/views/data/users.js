@@ -17,7 +17,7 @@ export default [
   },
   {
     name: 'McCall',
-    title: 'Head of Brand',
+    title: 'Brand Manager',
     image: mcall,
     bio: 'McCall Money double majored in Public Relations and Advertising at The University of Texas at Arlington. While in college, McCall was a member of the UT Arlington chapter of the American Advertising Federation, Public Relations Student Society of America, and led many of her projects as the Campaign Manager. McCall has experience with the Texas Rangers Baseball Club in customer service and promotions, and has also served as the Promotions Coordinator for Chick-fil-A. McCall’s mission is to provide clients with first-class care and attention. She is passionate about creating a seamless user experience and crafting innovative ideas through marketing, photography, and web design. ',
   },

@@ -43,9 +43,12 @@ export default function ContactUs() {
               We&apos;d love to hear from you
             </h2>
             <p className="text-white font-light w-1/2 text-center">
-              Whether you have a question about features, trials, pricing, need a demo, or anything
-              else, our team is ready to answer all your questions
+              Have a question about business solutions or pricing? Our team is ready to answer all
+              your questions! <br /> <br />
+              Want to join Closed Carrot as a prospective member? Let us know, and we’ll help you
+              get started!
             </p>
+            <br />
           </div>
         </div>
       </div>
