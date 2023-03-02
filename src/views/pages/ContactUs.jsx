@@ -35,11 +35,11 @@ export default function ContactUs() {
   }
 
   return (
-    <>
-      <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
-        <div className="w-full h-screen bg-desk  bg-cover bg-center">
-          <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
-            <h2 className="text-white font-bold text-4xl w-1/2 text-center">
+    <div className="mn-h-full">
+      <div className="w-full bg-desk bg-cover bg-center bg-[#FF8B46]">
+        <div className="w-full flex flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
+          <div className="flex justify-center items-center flex-col min-h-[300px] md:min-h-[500px]">
+            <h2 className="text-white font-bold md:text-4xl text-xl mb-2  w-1/2 text-center">
               We&apos;d love to hear from you
             </h2>
             <p className="text-white font-light w-1/2 text-center">
@@ -166,6 +166,6 @@ export default function ContactUs() {
         </div>
       </div>
       <br />
-    </>
+    </div>
   );
 }

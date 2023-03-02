@@ -4,9 +4,9 @@ import Footer from '../components/Footer';
 
 export default function NormalLayout({ children }) {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen no-scrollbar overflow-y-auto">
       <Header />
-      <div className="flex-col md:flex-1 md:flex-row">{children}</div>
+      <div className="flex-1">{children}</div>
       <Footer />
     </div>
   );

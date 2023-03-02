@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, createPortal } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/closed-carrot-logo.png';
-import { GrMenu } from 'react-icons/gr';
+import { GrMenu, GrClose } from 'react-icons/gr';
 
 export default function Header() {
   const location = useLocation();
@@ -30,7 +30,7 @@ export default function Header() {
         </h1>
 
         {/* desktop menu */}
-        <nav className="hidden lg:block">
+        <nav className="hidden md:block">
           <ul className="flex gap-12">
             <li className="max-w-xs">
               <Link
@@ -42,10 +42,6 @@ export default function Header() {
                 HOME
               </Link>
             </li>
-
-            {/* <li>
-              <Link to="/users">Users</Link>
-            </li> */}
 
             <li>
               <Link
@@ -72,18 +68,25 @@ export default function Header() {
                 CONTACT US
               </Link>
             </li>
-
-            {/* <li>
-              <Link to="/login">Login</Link>
-            </li> */}
           </ul>
         </nav>
 
         {/* mobile menu */}
-        {/* button */}
-        <button className="lg:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
-          <GrMenu className="text-2xl" />
-        </button>
+
+        {/* open button */}
+        {!showMobileMenu && (
+          <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            <GrMenu className="text-2xl" />
+          </button>
+        )}
+
+        {/* close */}
+        {showMobileMenu && (
+          <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            <GrClose className="text-2xl" />
+          </button>
+        )}
+
         {/* mobile menu nav */}
         {showMobileMenu && (
           <nav

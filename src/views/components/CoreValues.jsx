@@ -11,7 +11,7 @@ export default function CoreValues() {
         </h2>
         <br />
         <br />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
           <div className="bg-white rounded-md p-5 shadow-md">
             <img src={ipad} alt="woman on ipad" />
             <div>
