@@ -17,3 +17,9 @@ export const EMAIL = {
   EMAIL: process.env.EMAIL_EMAIL,
   PASSWORD: process.env.EMAIL_PASSWORD,
 };
+
+export const DISCORD = {
+  ID: process.env.DISCORD_ID,
+  TOKEN: process.env.DISCORD_TOKEN,
+  URL: process.env.DISCORD_URL,
+};
