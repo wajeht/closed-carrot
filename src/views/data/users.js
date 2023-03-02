@@ -26,12 +26,16 @@ export default [
     title: 'Full-stack Developer',
     image: will,
     bio: 'William Manning is an IT Business Analyst and Project Coordinator with experience in software development, reporting, automation, and project management. He has worked on custom software using MS Access, Crystal Reporting, SQL, and VBA, and has developed automation processes for Mulesoft Developers. William is proficient in various front-end and back-end programming languages, such as JavaScript, React, Python, and SQL. He is skilled in project planning, risk management, cost estimation, and schedule reporting, and has experience in maintaining data integrity and configuration control. Additionally, William has a Bachelors degree in Business Management from West Texas A&M University, and an Associates degree in Business Administration from Amarillo College. ',
+    linked: 'https://www.linkedin.com/in/william-manning-667a78201/',
+    git: 'https://github.com/KillytheBid',
   },
   {
     name: 'Karl',
     title: 'Full-stack Developer',
     image: karl,
     bio: 'Karl is a Regional Lead for a tech company specializing in green data centers. He has expertise in various aspects of tech, including full stack web development, User Interface development, automation, blockchain, and project management. His programming competencies include Javascript, HTML/CSS, React, Svelte, and is adept at working with SQL and NoSQL databases. Prior to his work in tech development, Karl had over 13 years of military and Federal service, where he employed various technologies within traditional and special operations.',
+    linked: 'www.linkedin.com/in/krshinn',
+    git: 'https://github.com/krshinn',
   },
   {
     name: 'David',
@@ -50,6 +54,8 @@ export default [
     title: 'Full-stack Developer',
     image: kyaw,
     bio: 'Kyaw a full-stack web developer, he is passionate about creating dynamic and engaging web applications that deliver value and enhance user experience. Possessing strong technical skills and knowledge in both front-end and back-end development, he has the ability to design and implement robust and scalable solutions that meet business requirements and exceed user expectations. He is skilled in using a range of programming languages and frameworks, including HTML, CSS, JavaScript, Node.js, React, and Angular, and is committed to staying up-to-date with the latest industry trends and technologies. He is a creative problem-solver who enjoys tackling complex challenges and finding elegant solutions that optimize performance, security, and accessibility. With excellent communication, collaboration, and project management skills, he is able to work effectively both independently and as part of a team, and is dedicated to delivering high-quality work that meets and exceeds client expectations.',
+    linked: 'https://www.linkedin.com/in/kyawsny/',
+    git: 'https://github.com/wajeht',
   },
   {
     name: 'Netty',
@@ -62,5 +68,7 @@ export default [
     title: 'Full-stack Developer',
     image: gerado,
     bio: 'Gerardo is the Lead Software Engineer for a tech startup that develops software for private security firms. He obtained an Associate’s Degree in Engineering Computer Science from Amarillo College, and continued his Computer Science Major at West Texas A&M University. Gerardo switched career goals to pursue his passion of helping others and served as a Catholic Missionary in the Central American country of Nicaragua for ten years. He returned to Texas in 2020 and has since then worked as a Full Stack Web Developer. Gerardo’s expertise is in Backend Web Development specializing in MERN Stack applications, API design, SQL & Mongo Database development, Cloud Micro-Services and Infrastructure, and CI/CD.    ',
+    linked: 'https://www.linkedin.com/in/gera-camo-jr/',
+    git: 'https://github.com/gercamjr',
   },
 ];
