@@ -17,6 +17,7 @@ closed carrot: amarillo's tech hub website
 - **[react-icons](https://react-icons.github.io/react-icons/)** for icons
 
 ## 🏭 Enviroment
+
 staging/dev environment
 
 ```
@@ -28,7 +29,6 @@ production environment
 ```
 https://closedcarrot.com/
 ```
-
 
 # 👨‍💻 Getting started
 
@@ -156,3 +156,5 @@ https://www.freeconvert.com/compress-png
 # © License
 
 Distributed under the MIT License © wajeht. See [LICENSE](https://github.com/closed-carrot/website/blob/main/LICENSE) for more information.
+
+# Test
