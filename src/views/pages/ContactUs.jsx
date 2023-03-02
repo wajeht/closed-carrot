@@ -133,8 +133,13 @@ export default function ContactUs() {
           {/* others */}
           <div className="flex flex-col items-center md:items-start gap-5">
             {/* email */}
-            <div className="flex  gap-5">
-              <span className="text-5xl">💌</span>
+            <div className="flex  gap-5 ">
+              <button
+                onClick={() => (window.location = 'mailto:yourmail@domain.com')}
+                className="text-5xl hover:cursor:pointer;"
+              >
+                💌
+              </button>
               <div>closedcarrot@gmail.com</div>
             </div>
 
@@ -146,7 +151,11 @@ export default function ContactUs() {
 
             {/* address */}
             <div className="flex gap-5">
-              <span className="text-5xl">📍</span>
+              <button className="text-5xl hover:cursor:pointer;">
+                <a href="https://www.google.com/maps/place/701+SE+10th+Ave,+Amarillo,+TX+79101/@35.2026004,-101.8303009,3a,75y,63.87h,83.05t/data=!3m6!1e1!3m4!1szkGb41_z6aIajqwgoo46zw!2e0!7i16384!8i8192!4m5!3m4!1s0x87014f1d7b43cd63:0xf5e6505d8ef1da3d!8m2!3d35.2027826!4d-101.8300603">
+                  📍
+                </a>
+              </button>
               <div>
                 701 SE 10th,
                 <br />

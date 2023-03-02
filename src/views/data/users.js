@@ -16,7 +16,7 @@ export default [
     bio: 'Jerri serves Closed Carrot as our business development and project management lead. She has a diverse professional background including mediation, real estate, project management, small business owner, court reporter legal assistant, training and even worked on the Space Shuttle Recovery team at Edward Air Force Base in California. She is passionate about community and helping others excel in their personal and professional goals. ',
   },
   {
-    name: 'Mccall',
+    name: 'McCall',
     title: 'Head of Brand',
     image: mcall,
     bio: 'McCall Money double majored in Public Relations and Advertising at The University of Texas at Arlington. While in college, McCall was a member of the UT Arlington chapter of the American Advertising Federation, Public Relations Student Society of America, and led many of her projects as the Campaign Manager. McCall has experience with the Texas Rangers Baseball Club in customer service and promotions, and has also served as the Promotions Coordinator for Chick-fil-A. McCall’s mission is to provide clients with first-class care and attention. She is passionate about creating a seamless user experience and crafting innovative ideas through marketing, photography, and web design. ',
