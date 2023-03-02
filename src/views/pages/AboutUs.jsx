@@ -1,5 +1,7 @@
 import React from 'react';
 import data from '../data/users';
+import linkedin from '../assets/images/icons/linkedin.svg';
+import github from '../assets/images/icons/github.svg';
 
 export default function AboutUs() {
   return (
@@ -74,6 +76,22 @@ export default function AboutUs() {
                     </h3>
 
                     <p className="p-3 rounded-sm font-light mt-3">{user.bio}</p>
+
+                    {user.linked || user.git ? (
+                      <div className="inline-flex w-56 h-12 px-12 m-auto justify-around">
+                        {user.linked && (
+                          <img
+                            src={linkedin}
+                            href={user.linked}
+                            alt="LinkedIn"
+                            className=" w-12 h-auto"
+                          />
+                        )}
+                        {user.git && (
+                          <img src={github} href={user.git} alt="GitHub" className="w-12 h-auto" />
+                        )}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               );

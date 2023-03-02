@@ -19,8 +19,8 @@ export default function CoreValues() {
               <p>
                 The Closed Carrot fosters a collaborative tech community in Amarillo, Texas through
                 hands-on innovation, offering professional development, mentorship, and teamwork.
-                Our ultimate mission: empower students to pursue their tech passions and succeed in
-                a constantly evolving industry.
+                Our ultimate mission: empower technology professionals to pursue their tech passions
+                and succeed in a constantly evolving industry.
               </p>
             </div>
           </div>
@@ -30,11 +30,14 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Plan</h2>
               <p>
-                The intention of this organization is to inspire and empower Amarillo students with
-                tech skills, knowledge, and opportunities, in a collaborative and creative
-                community. We value innovation and learning, promoting growth and competence through
-                events, initiatives, and projects. Ultimately, we aim to contribute to the growth
-                and success of the tech industry in Amarillo and beyond.
+                Our Community
+                <br />
+                Closed Carrot is a self-governed membership organization based in the Amarillo area.
+                Members of the tech hub. <br /> We want to inspire and empower businesses and
+                technology professionals. We aim to contribute to the growth and success of the tech
+                industry in Amarillo and beyond.
+                <br /> At Closed Carrot, the tech hub allows space for creativity, learning, and
+                leadership.
               </p>
             </div>
           </div>
@@ -44,9 +47,10 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Vision</h2>
               <p>
-                We empower students in Texas with resources and support for successful tech careers,
+                We empower our members with resources and support for successful tech careers,
                 valuing creativity, collaboration, and lifelong learning. Our ultimate goal is to
-                inspire the next generation of tech leaders who will shape Amarillo and beyond.
+                inspire the next generation of tech leaders and bring economic development through
+                tech businesses.
               </p>
             </div>
           </div>
