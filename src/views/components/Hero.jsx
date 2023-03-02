@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <div className="flex h-screen justify-center items-center flex-col max-h-[500px]">
-      <div className="w-full h-screen bg-cover bg-center bg-white-board">
-        <div className="w-full h-full flex  flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
-          <span className="text-white font-bold text-4xl mx-1 md:w-1/2 text-center">
+    <div className="w-full bg-white-board bg-center bg-[#FF8B46]">
+      <div className="w-full flex flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
+        <div className="flex justify-center items-center flex-col min-h-[300px] lg:min-h-[500px]">
+          <span className="text-white font-bold lg:text-4xl text-xl mb-2 mx-1 text-center">
             <span>
               <span>Unlock your digital potential with</span>
               <span className="px-1"></span>
