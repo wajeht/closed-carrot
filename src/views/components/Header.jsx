@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/closed-carrot-logo.png';
+import { GrMenu } from 'react-icons/gr';
 
 export default function Header() {
   const location = useLocation();
@@ -81,58 +82,47 @@ export default function Header() {
         {/* mobile menu */}
         {/* button */}
         <button className="lg:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
-          ===
+          <GrMenu className="text-2xl" />
         </button>
         {/* mobile menu nav */}
         {showMobileMenu && (
-          <nav ref={ref} className="absolute bg-white right-0 top-10 z-10">
+          <nav
+            ref={ref}
+            className="absolute bg-orange-500 p-5 rounded-md shadow-xl min-w-full min-h-full top-10 z-10"
+          >
             <ul className="flex flex-col gap-5 ">
-              <li className="w-">
-                <Link
-                  className={
-                    location.pathname === '/'
-                      ? 'underline decoration-4 decoration-orange-500'
-                      : null
-                  }
-                  to="/"
-                >
-                  HOME
-                </Link>
+              <li
+                className={
+                  location.pathname === '/'
+                    ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
+                    : 'text-white font-bold text-center'
+                }
+                onClick={() => setShowMobileMenu(!showMobileMenu)}
+              >
+                <Link to="/">HOME</Link>
               </li>
 
-              {/* <li>
-              <Link to="/users">Users</Link>
-            </li> */}
-
-              <li>
-                <Link
-                  className={
-                    location.pathname === '/about-us'
-                      ? 'underline decoration-4 decoration-orange-500'
-                      : null
-                  }
-                  to="/about-us"
-                >
-                  ABOUT US
-                </Link>
+              <li
+                className={
+                  location.pathname === '/about-us'
+                    ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
+                    : 'text-white font-bold text-center '
+                }
+                onClick={() => setShowMobileMenu(!showMobileMenu)}
+              >
+                <Link to="/about-us">ABOUT US</Link>
               </li>
 
-              <li>
-                <Link
-                  className={
-                    location.pathname === '/contact-us'
-                      ? 'underline decoration-4 decoration-orange-500'
-                      : null
-                  }
-                  to="/contact-us"
-                >
-                  CONTACT US
-                </Link>
+              <li
+                className={
+                  location.pathname === '/contact-us'
+                    ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
+                    : 'text-white font-bold text-center'
+                }
+                onClick={() => setShowMobileMenu(!showMobileMenu)}
+              >
+                <Link to="/contact-us">CONTACT US</Link>
               </li>
-
-              {/* <li>
-              <Link to="/login">Login</Link>
-            </li> */}
             </ul>
           </nav>
         )}
