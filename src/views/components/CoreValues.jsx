@@ -17,7 +17,7 @@ export default function CoreValues() {
             <div>
               <h2 className="font-bold text-xl text-center mb-2">Our Mission</h2>
               <p>
-                The Closed Carrot fosters a collaborative tech community in Amarillo, Texas through
+                The Closed Carrot fosters a collaborative tech community in Amarillo through
                 hands-on innovation, offering professional development, mentorship, and teamwork.
                 Our ultimate mission: empower technology professionals to pursue their tech passions
                 and succeed in a constantly evolving industry.
@@ -28,13 +28,12 @@ export default function CoreValues() {
           <div className="bg-white rounded-md p-5 shadow-md">
             <img src={mic} alt="podcast man and woman" />
             <div>
-              <h2 className="font-bold text-xl text-center mb-2">Our Plan</h2>
+              <h2 className="font-bold text-xl text-center mb-2">Our Services</h2>
               <p>
-                Closed Carrot is a self-governed membership organization based in the Amarillo area.
-                Members of the tech hub. We want to inspire and empower businesses and technology
-                professionals. We aim to contribute to the growth and success of the tech industry
-                in Amarillo and beyond. At Closed Carrot, the tech hub allows space for creativity,
-                learning, and leadership.
+                Closed Carrot offers full-stack web development for custom websites and apps,
+                marketing and brand management, and podcast production. All work is designed and
+                delivered by members of the Closed Carrot tech hub, ensuring your requests are
+                fulfilled.
               </p>
             </div>
           </div>
@@ -47,7 +46,7 @@ export default function CoreValues() {
                 We empower our members with resources and support for successful tech careers,
                 valuing creativity, collaboration, and lifelong learning. Our ultimate goal is to
                 inspire the next generation of tech leaders and bring economic development through
-                tech businesses.
+                high tech businesses.
               </p>
             </div>
           </div>
