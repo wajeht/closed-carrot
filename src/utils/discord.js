@@ -6,7 +6,7 @@ import { ENV_ENUM } from './enums.js';
 class Discord {
   static async send({ message = '', object = null }) {
     if (ENV === ENV_ENUM.DEVELOPMENT) {
-      console.log(`***** Skipping discord bot service in ${ENV} environment! *****`);
+      console.log(`***** skipping discord bot service in ${ENV} environment! *****`);
       return;
     }
 
@@ -34,6 +34,7 @@ class Discord {
       data: JSON.stringify(params),
       url: DISCORD.URL,
     });
+
     if (res?.status === 204) console.log(`***** discord bot sent ${message}! *****`);
   }
 }
