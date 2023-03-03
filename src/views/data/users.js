@@ -34,7 +34,7 @@ export default [
     title: 'Full-stack Developer',
     image: karl,
     bio: 'Karl is a Regional Lead for a tech company specializing in green data centers. He has expertise in various aspects of tech, including full stack web development, User Interface development, automation, blockchain, and project management. His programming competencies include Javascript, HTML/CSS, React, Svelte, and is adept at working with SQL and NoSQL databases. Prior to his work in tech development, Karl had over 13 years of military and Federal service, where he employed various technologies within traditional and special operations.',
-    linked: 'www.linkedin.com/in/krshinn',
+    linked: 'https://www.linkedin.com/in/krshinn',
     git: 'https://github.com/krshinn',
   },
   {
@@ -42,6 +42,7 @@ export default [
     title: 'Front-end Developer',
     image: david,
     bio: 'David possesses a Bachelor degree in Psychology with a minor in Fine Arts from Eastern New Mexico University, a Master of Arts in Postsecondary Education from San Diego State University, a Master of Education in Instructional Design & Technology from West Texas A&M University, as well as a certificate in Full Stack Web Development from Amarillo College. His career background is in education, digital marketing, technology, and web design. Some of his passions include photography, videography, graphic design, and hot air ballooning. In terms of web development, David’s focus has always been on the user experience and usability; he loves building responsive websites that are aesthetically pleasing and easy to use.',
+    linked: 'https://www.linkedin.com/in/davidmichaelwilson1981',
   },
   {
     name: 'Jeremy',
