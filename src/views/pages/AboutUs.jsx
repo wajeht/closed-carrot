@@ -73,8 +73,16 @@ export default function AboutUs() {
 
                     {user.linked || user.git ? (
                       <div className="inline-flex w-56 h-12 px-12 m-auto justify-around">
-                        {user.linked && <SiGithub className="text-4xl" />}
-                        {user.git && <ImLinkedin className="text-4xl" />}
+                        {user.git && (
+                          <a href={user.git} target="_blank" rel="noreferrer">
+                            <SiGithub className="text-4xl" />
+                          </a>
+                        )}
+                        {user.linked && (
+                          <a href={user.linked} target="_blank" rel="noreferrer">
+                            <ImLinkedin className="text-4xl" />
+                          </a>
+                        )}
                       </div>
                     ) : null}
                   </div>
