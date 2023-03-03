@@ -2,16 +2,12 @@ import React from 'react';
 
 export default function TermsOfService() {
   return (
-    <div className="mx-auto w-full max-w-7xl p-3">
+    <div className="mx-auto w-full max-w-7xl px-3 py-10">
       <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </h2>
-      <h4 className="text-m font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lets be honest...you're not going to read
-        it&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </h4>
       <br />
-
+      <br />
       <p className="text-2xl font-bold text-left  decoration-3 decoration-orange-500 underline-offset-4">
         Last updated: March 01, 2023
       </p>

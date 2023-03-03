@@ -41,14 +41,13 @@ export default function ContactUs() {
       <div className="w-full bg-desk bg-cover bg-center bg-[#FF8B46]">
         <div className="w-full flex flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
           <div className="flex justify-center items-center flex-col min-h-[300px] md:min-h-[500px]">
-            <h2 className="text-white font-bold md:text-4xl text-xl mb-2  w-1/2 text-center">
+            <h2 className="text-white font-bold md:text-4xl text-xl mb-2 text-center">
               We&apos;d love to hear from you
             </h2>
-            <p className="text-white font-light w-1/2 text-center">
+            <p className="text-white w-1/2 font-light text-center">
               Have a question about business solutions or pricing? Our team is ready to answer all
-              your questions! <br /> <br />
-              Want to join Closed Carrot as a prospective member? Let us know, and we’ll help you
-              get started!
+              your questions! Want to join Closed Carrot as a prospective member? Let us know, and
+              we’ll help you get started!
             </p>
             <br />
           </div>
