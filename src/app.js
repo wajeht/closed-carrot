@@ -34,6 +34,8 @@ app.use(apiMiddlewares.httpApiResponses);
 
 expressJSDocSwagger(app)(swaggerConfig);
 
+app.get('/api/sitehealthcheck', appMiddlewares.siteHealthCheck);
+
 if (ENV === ENV_ENUM.PRODUCTION) {
   app.use('/api', rateLimiters.api, apiRoutes);
   app.use('*', rateLimiters.app, appMiddlewares.reactHandler);
