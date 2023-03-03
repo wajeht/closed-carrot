@@ -21,14 +21,14 @@ export default function ContactUs() {
         forBearsOnly,
       })
       .then(() => {
-        setSuccess(true);
-        setLoading(false);
-        setErrors([]);
-
         // clear the form
         setSubject('');
         setEmail('');
         setMessage('');
+
+        setSuccess(true);
+        setLoading(false);
+        setErrors([]);
       })
       .catch((error) => {
         setErrors(error.response.data.errors.map((e) => e.msg));
@@ -92,6 +92,7 @@ export default function ContactUs() {
                   id="subject"
                   required
                   disabled={loading}
+                  value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
@@ -106,6 +107,7 @@ export default function ContactUs() {
                   id="email"
                   required
                   disabled={loading}
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -121,6 +123,7 @@ export default function ContactUs() {
                   rows="10"
                   required
                   disabled={loading}
+                  value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
