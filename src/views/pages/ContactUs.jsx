@@ -5,6 +5,7 @@ export default function ContactUs() {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [forBearsOnly, setTrap] = useState('');
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [errors, setErrors] = useState([]);
@@ -17,6 +18,7 @@ export default function ContactUs() {
         subject,
         email,
         message,
+        forBearsOnly,
       })
       .then(() => {
         setSuccess(true);
@@ -121,6 +123,21 @@ export default function ContactUs() {
                   disabled={loading}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
+              </div>
+
+              {/* honeypot */}
+              <div className="hidden">
+                <label htmlFor="forBearsOnly">
+                  YOU DONT HAVE TO DO THIS BBGRL LET ME TAKE YOU AWAY FROM ALL THIS
+                </label>
+                <input
+                  className=""
+                  type="text"
+                  name="forBearsOnly"
+                  id="forBearsOnly"
+                  disabled={loading}
+                  onChange={(e) => setTrap(e.target.value)}
+                />
               </div>
 
               {/* login */}
