@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function PrivacyPolicy() {
   return (
@@ -555,14 +556,8 @@ export default function PrivacyPolicy() {
         <br />
         <li>
           <p>
-            By visiting this page on our website:{' '}
-            <a
-              href="https://closed-carrot.jaw.homes/contact-us"
-              rel="external nofollow noopener noreferrer"
-              target="_blank"
-            >
-              https://closed-carrot.jaw.homes/contact-us
-            </a>
+            By visiting this page on our website:
+            <Link to="/contact-us">{window.location.href}</Link>
           </p>
         </li>
         <br />

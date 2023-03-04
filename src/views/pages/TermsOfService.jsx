@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function TermsOfService() {
   return (
@@ -8,7 +9,7 @@ export default function TermsOfService() {
       </h2>
       <br />
       <br />
-      <p className="text-2xl font-bold text-left  decoration-3 decoration-orange-500 underline-offset-4">
+      <p className="text-m font-bold text-left  decoration-3 decoration-orange-500 underline-offset-4">
         Last updated: March 01, 2023
       </p>
 
@@ -82,7 +83,11 @@ export default function TermsOfService() {
             Terms and Conditions that form the entire agreement between You and the Company
             regarding the use of the Service. This Terms and Conditions agreement has been created
             with the help of the{' '}
-            <a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">
+            <a
+              href="https://www.termsfeed.com/terms-conditions-generator/"
+              target="_blank"
+              rel="noreferrer"
+            >
               TermsFeed Terms and Conditions Generator
             </a>
             .
@@ -99,10 +104,8 @@ export default function TermsOfService() {
         <br />
         <li>
           <p>
-            <strong>Website</strong> refers to Closed Carrot, accessible from{' '}
-            <a href="https://closed-carrot.com" rel="external nofollow noopener" target="_blank">
-              https://closed-carrot.com
-            </a>
+            <strong>Website</strong> refers to Closed Carrot, accessible from
+            <Link to="/">{window.location.href}</Link>
           </p>
         </li>
         <br />
@@ -329,6 +332,7 @@ export default function TermsOfService() {
         to be bound by the revised terms. If You do not agree to the new terms, in whole or in part,
         please stop using the website and the Service.
       </p>
+      <br />
       <h2 className="text-l font-bold text-left underline decoration-3 decoration-black-500 underline-offset-4">
         Contact Us
       </h2>
@@ -340,14 +344,8 @@ export default function TermsOfService() {
         <br />
         <li>
           <p>
-            By visiting this page on our website:{' '}
-            <a
-              href="https://closed-carrot.jaw.homes/contact-us"
-              rel="external nofollow noopener"
-              target="_blank"
-            >
-              https://closed-carrot.jaw.homes/contact-us
-            </a>
+            By visiting this page on our website:
+            <Link href="/contact-us">{window.location.href}</Link>
           </p>
         </li>
         <br />
