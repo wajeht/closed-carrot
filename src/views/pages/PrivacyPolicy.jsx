@@ -2,13 +2,12 @@ import React from 'react';
 
 export default function PrivacyPolicy() {
   return (
-    <div className="mx-auto w-full max-w-7xl p-3">
+    <div className="mx-auto w-full max-w-7xl px-3 py-10">
       <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </h2>
-      <h4 className="text-m font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plain and Simple&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </h4>
+      <br />
+      <br />
       <p className="text-m font-bold text-left  decoration-3 decoration-orange-500 underline-offset-4">
         Last updated: March 01, 2023
       </p>
@@ -21,11 +20,16 @@ export default function PrivacyPolicy() {
         We use Your Personal data to provide and improve the Service. By using the Service, You
         agree to the collection and use of information in accordance with this Privacy Policy. This
         Privacy Policy has been created with the help of the{' '}
-        <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">
-          Privacy Policy Generator
+        <a
+          href="https://www.privacypolicies.com/privacy-policy-generator/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Privacy Policy Generator.
         </a>{' '}
-        <br />.
+        <br />
       </p>
+      <br />
       <h2 className="text-m font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         Interpretation and Definitions
       </h2>{' '}
@@ -125,7 +129,11 @@ export default function PrivacyPolicy() {
         <li>
           <p>
             <strong>Website</strong> refers to Closed Carrot, accessible from{' '}
-            <a href="https://closed-carrot.jcom" rel="external nofollow noopener" target="_blank">
+            <a
+              href="https://closed-carrot.jcom"
+              rel="external nofollow noopener noreferrer"
+              target="_blank"
+            >
               https://closed-carrot.jcom
             </a>
           </p>
@@ -140,13 +148,11 @@ export default function PrivacyPolicy() {
         </li>
         <br />
       </ul>
-      <h2 className="text-4xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-        Collecting and Using YOUR Personal Data
-      </h2>
       <br />
-      <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
+      <h2 className="text-xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         Types of Data Collected
       </h2>
+      <br />
       <h3>Personal Data</h3>
       <p>
         While using Our Service, We may ask You to provide Us with certain personally identifiable
@@ -172,10 +178,11 @@ export default function PrivacyPolicy() {
         </li>
         <br />
       </ul>
-      <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
+      <h2 className="text-xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         {' '}
         Usage Data
       </h2>
+      <br />
       <p>Usage Data is collected automatically when using the Service.</p>
       <p>
         Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP
@@ -231,6 +238,7 @@ export default function PrivacyPolicy() {
         <a
           href="https://www.privacypolicies.com/blog/privacy-policy-template/#Use_Of_Cookies_Log_Files_And_Tracking"
           target="_blank"
+          rel="noreferrer"
         >
           Privacy Policies website
         </a>{' '}
@@ -285,9 +293,10 @@ export default function PrivacyPolicy() {
         visit our Cookies Policy or the Cookies section of our Privacy Policy.
       </p>
       <br />
-      <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
+      <h2 className="text-xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         Use of Your Personal Data
       </h2>
+      <br />
       <p>The Company may use Personal Data for the following purposes:</p>
       <ul>
         <li>
@@ -395,9 +404,10 @@ export default function PrivacyPolicy() {
         </li>
         <br />
       </ul>
-      <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
+      <h2 className="text-xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         Retention of Your Personal Data
       </h2>
+      <br />
       <p>
         The Company will retain Your Personal Data only for as long as is necessary for the purposes
         set out in this Privacy Policy. We will retain and use Your Personal Data to the extent
@@ -548,7 +558,7 @@ export default function PrivacyPolicy() {
             By visiting this page on our website:{' '}
             <a
               href="https://closed-carrot.jaw.homes/contact-us"
-              rel="external nofollow noopener"
+              rel="external nofollow noopener noreferrer"
               target="_blank"
             >
               https://closed-carrot.jaw.homes/contact-us

@@ -3,7 +3,11 @@ import { saveContact } from './contact.services.js';
 import Discord from '../../../utils/discord.js';
 
 export async function postContact(req, res) {
-  const { email, subject, message } = req.body;
+  const { email, subject, message, forBearsOnly } = req.body;
+
+  if (forBearsOnly != '') {
+    return res.success({ message: 'your message has been sent successfully!' });
+  }
 
   await Mail.send({
     from: email,

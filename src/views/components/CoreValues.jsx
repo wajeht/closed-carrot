@@ -14,7 +14,7 @@ export default function CoreValues() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
           <div className="bg-white rounded-md p-5 shadow-md">
             <img src={ipad} alt="woman on ipad" />
-            <div>
+            <div className="mt-3">
               <h2 className="font-bold text-xl text-center mb-2">Our Mission</h2>
               <p>
                 The Closed Carrot fosters a collaborative tech community in Amarillo through
@@ -27,7 +27,7 @@ export default function CoreValues() {
 
           <div className="bg-white rounded-md p-5 shadow-md">
             <img src={mic} alt="podcast man and woman" />
-            <div>
+            <div className="mt-3">
               <h2 className="font-bold text-xl text-center mb-2">Our Services</h2>
               <p>
                 Closed Carrot offers full-stack web development for custom websites and apps,
@@ -40,7 +40,7 @@ export default function CoreValues() {
 
           <div className="bg-white rounded-md p-5 shadow-md">
             <img src={computer} alt="ground around computer" />
-            <div>
+            <div className="mt-3">
               <h2 className="font-bold text-xl text-center mb-2">Our Vision</h2>
               <p>
                 We empower our members with resources and support for successful tech careers,

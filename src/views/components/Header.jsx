@@ -1,7 +1,10 @@
-import React, { useRef, useEffect, useState, createPortal } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+
+import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../assets/closed-carrot-logo.png';
 import { GrMenu, GrClose } from 'react-icons/gr';
+
+import Logo from '../assets/closed-carrot-logo.png';
 
 export default function Header() {
   const location = useLocation();
@@ -22,14 +25,14 @@ export default function Header() {
 
   return (
     <header className="bg-white py-10 px-3">
-      <div className="max-w-7xl mx-auto flex justify-between items-center relative">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1>
           <Link to="/">
             <img className="max-h-[35px]" src={Logo} alt="closed carrot logo" />
           </Link>
         </h1>
 
-        {/* desktop menu */}
+        {/* ---------------------- desktop menu ---------------------- */}
         <nav className="hidden md:block">
           <ul className="flex gap-12">
             <li className="max-w-xs">
@@ -71,7 +74,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* mobile menu */}
+        {/* ---------------------- mobile menu ---------------------- */}
 
         {/* open button */}
         {!showMobileMenu && (
@@ -80,55 +83,58 @@ export default function Header() {
           </button>
         )}
 
-        {/* close */}
-        {showMobileMenu && (
-          <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
-            <GrClose className="text-2xl" />
-          </button>
-        )}
-
         {/* mobile menu nav */}
-        {showMobileMenu && (
-          <nav
-            ref={ref}
-            className="absolute bg-orange-500 p-5 rounded-md shadow-xl min-w-full min-h-full top-10 z-10"
-          >
-            <ul className="flex flex-col gap-5 ">
-              <li
-                className={
-                  location.pathname === '/'
-                    ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
-                    : 'text-white font-bold text-center'
-                }
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
-              >
-                <Link to="/">HOME</Link>
-              </li>
+        {showMobileMenu &&
+          createPortal(
+            <div className="backdrop-blur-sm bg-black/30 w-screen h-screen absolute top-0 z-999 py-10 px-3">
+              {/* close button */}
+              <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <GrClose className="text-2xl absolute right-3 top-11" />
+              </button>
 
-              <li
-                className={
-                  location.pathname === '/about-us'
-                    ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
-                    : 'text-white font-bold text-center '
-                }
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
+              {/* nav */}
+              <nav
+                ref={ref}
+                className="relative bg-orange-500 p-5 rounded-md shadow-xl min-w-full top-7"
               >
-                <Link to="/about-us">ABOUT US</Link>
-              </li>
+                <ul className="flex flex-col gap-5 ">
+                  <li
+                    className={
+                      location.pathname === '/'
+                        ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
+                        : 'text-white font-bold text-center'
+                    }
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  >
+                    <Link to="/">HOME</Link>
+                  </li>
 
-              <li
-                className={
-                  location.pathname === '/contact-us'
-                    ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
-                    : 'text-white font-bold text-center'
-                }
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
-              >
-                <Link to="/contact-us">CONTACT US</Link>
-              </li>
-            </ul>
-          </nav>
-        )}
+                  <li
+                    className={
+                      location.pathname === '/about-us'
+                        ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
+                        : 'text-white font-bold text-center '
+                    }
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  >
+                    <Link to="/about-us">ABOUT US</Link>
+                  </li>
+
+                  <li
+                    className={
+                      location.pathname === '/contact-us'
+                        ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
+                        : 'text-white font-bold text-center'
+                    }
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  >
+                    <Link to="/contact-us">CONTACT US</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>,
+            document.body,
+          )}
       </div>
     </header>
   );

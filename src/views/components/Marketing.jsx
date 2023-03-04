@@ -11,7 +11,7 @@ export default function Marketing() {
       <br />
 
       {/* paragraph */}
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6 ">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-6">
         {/* image */}
         <div>
           <img src={cup} alt="" />
@@ -34,10 +34,11 @@ export default function Marketing() {
             social responsibility. Our members are passionate about using technology to impact the
             community positively.
           </p>
+          <br />
           <Link
             to="/contact-us"
             title="ContactUs"
-            className="px-5 py-3  bg-orange-500 hover:bg-orange-600 text-white rounded-md justify-center"
+            className="px-5 py-3  bg-orange-500 hover:bg-orange-600 text-white rounded-md justify-center items-end"
           >
             Contact Us
           </Link>

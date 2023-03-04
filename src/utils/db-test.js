@@ -1,19 +1,20 @@
-// import mongoose from 'mongoose';
-// import { MongoMemoryServer } from 'mongodb-memory-server';
+import mongoose from 'mongoose';
+import { MongoMemoryServer } from 'mongodb-memory-server';
 
-// const mongoServer = new MongoMemoryServer();
+let mongo = null;
 
-// export async function connectDB() {
-//   const uri = mongoServer.getUri();
+export const connectDatabase = async () => {
+  mongo = await MongoMemoryServer.create();
+  const uri = mongo.getUri();
 
-//   await mongoose.connect(uri, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   });
-// }
+  await mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+};
 
-// export async function disconnectDB() {
-//   await mongoose.connection.dropDatabase();
-//   await mongoose.connection.close();
-//   await mongoServer.stop();
-// }
+export const closeDatabase = async () => {
+  await mongoose.connection.dropDatabase();
+  await mongoose.connection.close();
+  await mongo.stop();
+};

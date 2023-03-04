@@ -6,7 +6,7 @@ import karl from '../assets/images/headshots/KarlShinn.jpg';
 import david from '../assets/images/headshots/davidwilson2.png';
 import jermy from '../assets/images/headshots/jeremy.png';
 import jglover from '../assets/images/headshots/jglover.jpg';
-import kyaw from '../assets/images/headshots/jaw.jpeg';
+import kyaw from '../assets/images/headshots/jaw.png';
 
 export default [
   {

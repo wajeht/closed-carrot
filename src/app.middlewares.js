@@ -11,6 +11,13 @@ export function reactHandler(req, res, next) {
   }
 }
 
+export function siteHealthCheck(req, res) {
+  return res.status(200).json({
+    message: 'ok',
+    date: new Date(),
+  });
+}
+
 export function notFoundApiHandler(req, res, next) {
   const isApiPrefix = req.url.match(/\/api\//g);
   if (isApiPrefix) {
