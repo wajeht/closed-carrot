@@ -1,5 +1,7 @@
 import cup from '../assets/images/marketing/orange-coffee-cup.png';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../../utils/scroll';
+
 export default function Marketing() {
   return (
     <div className="mx-auto w-full max-w-7xl px-3 py-10 ">
@@ -39,6 +41,7 @@ export default function Marketing() {
             to="/contact-us"
             title="ContactUs"
             className="px-5 py-3  bg-orange-500 hover:bg-orange-600 text-white rounded-md justify-center items-end"
+            onClick={ScrollToTop}
           >
             Contact Us
           </Link>

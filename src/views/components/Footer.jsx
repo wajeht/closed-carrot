@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/closed-carrot-logo.png';
+import ScrollToTop from '../../utils/scroll';
 
 export default function Header() {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex flex-col justify-center gap-5 items-center min-h-full p-3">
         {/* logo */}
         <div className="bg-orange-100 rounded-md p-5">
-          <Link to="/">
+          <Link to="/" onClick={ScrollToTop}>
             <img className="max-h-[35px]" src={Logo} alt="closed carrot logo" />
           </Link>
         </div>
@@ -32,11 +33,13 @@ export default function Header() {
                   : null
               }
               to="/privacy-policy"
+              onClick={ScrollToTop}
             >
               Privacy Policy
             </Link>
             <li>|</li>
             <Link
+              onClick={ScrollToTop}
               className={
                 location.pathname === '/terms-of-service'
                   ? 'underline decoration-2 decoration-white'
