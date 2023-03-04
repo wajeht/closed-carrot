@@ -106,7 +106,9 @@ export default function Header() {
                     }
                     onClick={() => setShowMobileMenu(!showMobileMenu)}
                   >
-                    <Link to="/">HOME</Link>
+                    <Link className="w-full block" to="/">
+                      HOME
+                    </Link>
                   </li>
 
                   <li
@@ -117,7 +119,9 @@ export default function Header() {
                     }
                     onClick={() => setShowMobileMenu(!showMobileMenu)}
                   >
-                    <Link to="/about-us">ABOUT US</Link>
+                    <Link className="w-full block" to="/about-us">
+                      ABOUT US
+                    </Link>
                   </li>
 
                   <li
@@ -128,7 +132,9 @@ export default function Header() {
                     }
                     onClick={() => setShowMobileMenu(!showMobileMenu)}
                   >
-                    <Link to="/contact-us">CONTACT US</Link>
+                    <Link className="w-full block" to="/contact-us">
+                      CONTACT US
+                    </Link>
                   </li>
                 </ul>
               </nav>
