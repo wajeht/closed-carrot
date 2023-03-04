@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
+
 import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../assets/closed-carrot-logo.png';
 import { GrMenu, GrClose } from 'react-icons/gr';
+
+import Logo from '../assets/closed-carrot-logo.png';
 
 export default function Header() {
   const location = useLocation();
@@ -30,7 +32,7 @@ export default function Header() {
           </Link>
         </h1>
 
-        {/* desktop menu */}
+        {/* ---------------------- desktop menu ---------------------- */}
         <nav className="hidden md:block">
           <ul className="flex gap-12">
             <li className="max-w-xs">
@@ -72,7 +74,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* mobile menu */}
+        {/* ---------------------- mobile menu ---------------------- */}
 
         {/* open button */}
         {!showMobileMenu && (
@@ -84,7 +86,7 @@ export default function Header() {
         {/* mobile menu nav */}
         {showMobileMenu &&
           createPortal(
-            <div className="backdrop-blur-sm bg-white/30 w-screen h-screen absolute top-0 z-999 py-10 px-3">
+            <div className="backdrop-blur-sm bg-black/30 w-screen h-screen absolute top-0 z-999 py-10 px-3">
               {/* close button */}
               <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <GrClose className="text-2xl absolute right-3 top-11" />
