@@ -18,19 +18,20 @@ export default function Header() {
         </div>
 
         {/* law */}
-        <p className="text-center">
+        <p className="text-center text-sm md:text-base">
           Copyright © {currentYear} Closed Carrot. All rights reserved. Built with ❤️ by a group of
           awesome people!
         </p>
 
         {/* links */}
-        <nav className="text-sm font-light">
+        <nav className="text-xs md:text-sm font-light">
           <ul className="flex gap-3">
             <Link
               className={
-                location.pathname === '/privacy-policy'
+                (location.pathname === '/privacy-policy'
                   ? 'underline decoration-2 decoration-white'
-                  : null
+                  : null,
+                'whitespace-nowrap')
               }
               to="/privacy-policy"
               onClick={ScrollToTop}
@@ -41,9 +42,10 @@ export default function Header() {
             <Link
               onClick={ScrollToTop}
               className={
-                location.pathname === '/terms-of-service'
-                  ? 'underline decoration-2 decoration-white'
-                  : null
+                (location.pathname === '/terms-of-service'
+                  ? 'underline decoration-2 decoration-white '
+                  : null,
+                'whitespace-nowrap')
               }
               to="/terms-of-service"
             >
