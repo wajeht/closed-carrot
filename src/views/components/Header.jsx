@@ -97,42 +97,50 @@ export default function Header() {
                 ref={ref}
                 className="relative bg-orange-500 p-5 rounded-md shadow-xl min-w-full top-7"
               >
-                <ul className="flex flex-col gap-5 ">
+                <ul className="flex flex-col gap-2 ">
                   <li
-                    className={
-                      location.pathname === '/'
-                        ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
-                        : 'text-white font-bold text-center'
-                    }
-                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                    className={`p-2 rounded-md font-bold text-center min-w-full min-h-full
+                      ${location.pathname === '/' ? 'bg-white' : 'text-white hover:bg-orange-600'}`}
                   >
-                    <Link className="w-full block" to="/">
+                    <Link
+                      className="w-full block"
+                      onClick={() => setShowMobileMenu(!showMobileMenu)}
+                      to="/"
+                    >
                       HOME
                     </Link>
                   </li>
 
                   <li
-                    className={
-                      location.pathname === '/about-us'
-                        ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
-                        : 'text-white font-bold text-center '
-                    }
-                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                    className={`p-2 rounded-md font-bold text-center min-w-full min-h-full
+                      ${
+                        location.pathname === '/about-us'
+                          ? 'bg-white'
+                          : 'text-white hover:bg-orange-600'
+                      }`}
                   >
-                    <Link className="w-full block" to="/about-us">
+                    <Link
+                      onClick={() => setShowMobileMenu(!showMobileMenu)}
+                      className="w-full block"
+                      to="/about-us"
+                    >
                       ABOUT US
                     </Link>
                   </li>
 
                   <li
-                    className={
-                      location.pathname === '/contact-us'
-                        ? 'bg-white rounded-md p-2 min-w-full min-h-full font-bold text-center'
-                        : 'text-white font-bold text-center'
-                    }
-                    onClick={() => setShowMobileMenu(!showMobileMenu)}
+                    className={`p-2 rounded-md font-bold text-center min-w-full min-h-full
+                      ${
+                        location.pathname === '/contact-us'
+                          ? 'bg-white'
+                          : 'text-white hover:bg-orange-600'
+                      }`}
                   >
-                    <Link className="w-full block" to="/contact-us">
+                    <Link
+                      onClick={() => setShowMobileMenu(!showMobileMenu)}
+                      className="w-full block"
+                      to="/contact-us"
+                    >
                       CONTACT US
                     </Link>
                   </li>
