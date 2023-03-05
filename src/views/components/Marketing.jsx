@@ -40,7 +40,7 @@ export default function Marketing() {
           <Link
             to="/contact-us"
             title="ContactUs"
-            className="px-5 py-3  bg-orange-500 hover:bg-orange-600 text-white rounded-md justify-center items-end"
+            className="px-5 py-3  bg-orange-500 hover:bg-orange-600 text-white rounded-md justify-center items-end font-bold"
             onClick={ScrollToTop}
           >
             Contact Us
