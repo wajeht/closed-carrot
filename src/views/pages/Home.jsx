@@ -3,6 +3,8 @@ import React from 'react';
 import Hero from '../components/Hero';
 import CoreValues from '../components/CoreValues';
 import Marketing from '../components/Marketing';
+import Clients from '../components/Clients';
+import Services from '../components/Services';
 
 export default function Home() {
   return (
@@ -10,8 +12,8 @@ export default function Home() {
       <Hero />
       <CoreValues />
       <Marketing />
-      {/* <div className="bg-green-50 min-h-[500px]"></div>
-      <div className="bg-orange-50 min-h-[500px]"></div> */}
+      <Services />
+      <Clients />
     </>
   );
 }
