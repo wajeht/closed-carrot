@@ -21,7 +21,7 @@ closed carrot: amarillo's tech hub website
 staging/dev environment
 
 ```
-https://closed-carrot.jaw.homes/
+https://dev.closedcarrot.com/
 ```
 
 production environment
