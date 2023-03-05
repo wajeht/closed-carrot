@@ -17,7 +17,26 @@ import { ENV } from './config/constants.js';
 
 const app = express();
 
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+        /* eslint-disable quotes */
+        frameSrc: ["'self'", '*.google.com/'],
+        childSrc: ["'self'", '*.google.com/'],
+        'frame-ancestors': ["'self'", '*.google.com/'],
+        'script-src': [
+          "'self'",
+          "'unsafe-inline'",
+          'dev.closedcarrot.com',
+          'closedcarrot.com',
+          'localhost',
+        ],
+      },
+    },
+  }),
+);
 app.use(cors());
 app.use(compression());
 app.use(express.json());
