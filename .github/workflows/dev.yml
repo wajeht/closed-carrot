@@ -1,4 +1,4 @@
-name: CI
+name: Dev
 
 on: push
 
@@ -100,35 +100,3 @@ jobs:
           server: '${{ secrets.CAPROVER_SERVER_DEV }}'
           app: '${{ secrets.APP_NAME_DEV }}'
           token: '${{ secrets.APP_TOKEN_DEV }}'
-
-  deploy-prod:
-    needs: [format, lint, test]
-    name: Deploy to prod server
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [19.x]
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
-      - uses: a7ul/tar-action@v1.1.2
-        with:
-          command: c
-          cwd: './'
-          files: ./
-          outPath: deploy.tar
-
-      - name: Deploy App to CapRover
-        uses: caprover/deploy-from-github@v1.1.2
-        with:
-          server: '${{ secrets.CAPROVER_SERVER_PROD }}'
-          app: '${{ secrets.APP_NAME_PROD }}'
-          token: '${{ secrets.APP_TOKEN_PROD }}'
