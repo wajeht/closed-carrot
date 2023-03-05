@@ -22,17 +22,7 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        /* eslint-disable quotes */
-        frameSrc: ["'self'", '*.google.com/'],
-        childSrc: ["'self'", '*.google.com/'],
-        'frame-ancestors': ["'self'", '*.google.com/'],
-        'script-src': [
-          "'self'",
-          "'unsafe-inline'",
-          'dev.closedcarrot.com',
-          'closedcarrot.com',
-          'localhost',
-        ],
+        frameSrc: ['https://*.google.com'],
       },
     },
   }),
