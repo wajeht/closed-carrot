@@ -17,13 +17,7 @@ import { ENV } from './config/constants.js';
 
 const app = express();
 
-// TODO!: disable this for prod
-app.use(
-  helmet({
-    contentSecurityPolicy: false,
-    crossOriginEmbedderPolicy: false,
-  }),
-);
+app.use(helmet());
 app.use(cors());
 app.use(compression());
 app.use(express.json());
@@ -34,13 +28,13 @@ app.use(apiMiddlewares.httpApiResponses);
 
 expressJSDocSwagger(app)(swaggerConfig);
 
-app.get('/api/sitehealthcheck', appMiddlewares.siteHealthCheck);
-
 if (ENV === ENV_ENUM.PRODUCTION) {
   app.use('/api', rateLimiters.api, apiRoutes);
+  app.get('/api/health', rateLimiters.api, appMiddlewares.healthCheck);
   app.use('*', rateLimiters.app, appMiddlewares.reactHandler);
 } else {
   app.use('/api', apiRoutes);
+  app.get('/api/health', appMiddlewares.healthCheck);
   app.use('*', appMiddlewares.reactHandler);
 }
 

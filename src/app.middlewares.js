@@ -11,7 +11,7 @@ export function reactHandler(req, res, next) {
   }
 }
 
-export function siteHealthCheck(req, res) {
+export function healthCheck(req, res) {
   return res.status(200).json({
     message: 'ok',
     date: new Date(),
