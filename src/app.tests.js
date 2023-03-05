@@ -5,9 +5,9 @@ import { StatusCodes } from 'http-status-codes';
 
 import app from './app';
 
-describe('GET /api/sitehealthcheck', () => {
+describe('GET /api/health', () => {
   it('should returns a success response', async () => {
-    const res = await request(app).get('/api/sitehealthcheck');
+    const res = await request(app).get('/api/health');
     expect(res.statusCode).toBe(StatusCodes.OK);
     expect(res.body.message).toBe('ok');
   });
