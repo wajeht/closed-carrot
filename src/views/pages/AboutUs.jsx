@@ -26,8 +26,8 @@ export default function AboutUs() {
             As a self-governed cooperative, we bring a fresh perspective to the tech industry by
             combining innovation with industry trends and best practices. With experts in software
             development, web design, digital marketing, and data analytics, we offer various
-            services tailored to our client's needs. We value collaboration and work closely with
-            our clients to co-create technology solutions that are effective and efficient.
+            services tailored to our client&apos;s needs. We value collaboration and work closely
+            with our clients to co-create technology solutions that are effective and efficient.
           </p>
           <br />
           <p>
@@ -42,10 +42,10 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className=" bg-orange-100">
+      <div className="bg-orange-100">
         <div className=" mx-auto w-full max-w-7xl px-3 py-10">
           <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teams&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </h2>
           <br />
           <br />
