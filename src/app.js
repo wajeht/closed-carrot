@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import path from 'path';
 import cors from 'cors';
 import compression from 'compression';
@@ -21,8 +22,9 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        frameSrc: ['https://*.google.com'],
+        'frame-ancestors': ["'self'", '*.google.com/'],
+        frameSrc: ["'self'", '*.google.com/'],
+        childSrc: ["'self'", '*.google.com/'],
       },
     },
   }),
@@ -36,6 +38,11 @@ app.use(express.static(path.resolve(path.join(process.cwd(), 'public'))));
 app.use(apiMiddlewares.httpApiResponses);
 
 expressJSDocSwagger(app)(swaggerConfig);
+
+app.use((req, res, next) => {
+  res.header('Cross-Origin-Embedder-Policy', 'cross-origin');
+  next();
+});
 
 if (ENV === ENV_ENUM.PRODUCTION) {
   app.use('/api', rateLimiters.api, apiRoutes);
