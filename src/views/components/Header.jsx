@@ -24,7 +24,7 @@ export default function Header() {
   }, [showMobileMenu]);
 
   return (
-    <header className="bg-white py-10 px-3">
+    <header className="bg-white py-10 px-3 sticky top-0 z-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1>
           <Link to="/">
@@ -86,7 +86,7 @@ export default function Header() {
         {/* mobile menu nav */}
         {showMobileMenu &&
           createPortal(
-            <div className="backdrop-blur-sm bg-black/30 w-screen h-screen absolute top-0 z-999 py-10 px-3">
+            <div className="backdrop-blur-sm bg-black/30 w-screen h-screen absolute top-0 z-20 py-10 px-3">
               {/* close button */}
               <button className="md:hidden" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <GrClose className="text-2xl absolute right-3 top-11" />
