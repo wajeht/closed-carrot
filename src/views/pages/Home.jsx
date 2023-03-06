@@ -13,7 +13,7 @@ export default function Home() {
       <CoreValues />
       <Marketing />
       <Services />
-      <Clients />
+      {/* <Clients /> */}
     </>
   );
 }
