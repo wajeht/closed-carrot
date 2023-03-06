@@ -556,7 +556,7 @@ export default function PrivacyPolicy() {
         <br />
         <li>
           <p>
-            By visiting this page on our website:
+            By visiting this page on our website:{' '}
             <Link to="/contact-us">{window.location.href}</Link>
           </p>
         </li>
