@@ -19,6 +19,7 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
           {/* WEB DEV */}
+
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
               <FaGlobeAmericas className="text-5xl text-orange-600 mx-auto m-5 group-hover:text-white" />

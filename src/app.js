@@ -17,7 +17,13 @@ import { ENV } from './config/constants.js';
 
 const app = express();
 
-app.use(helmet());
+// TODO!: disable this for prod
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+  }),
+);
 app.use(cors());
 app.use(compression());
 app.use(express.json());
