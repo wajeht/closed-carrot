@@ -85,11 +85,7 @@ export default function AboutUs() {
                           </a>
                         )}
                         {user.email && (
-                          <a
-                            onClick={() => (window.location = `mailto:${user.email}`)}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <a href={`mailto:${user.email}`} target="_blank" rel="noreferrer">
                             <MdEmail className="text-4xl hover:cursor-pointer	" />
                           </a>
                         )}
