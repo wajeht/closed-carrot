@@ -34,6 +34,14 @@ const UserSchema = new mongoose.Schema({
     type: String,
     require: false,
   },
+  member: {
+    type: false,
+    require: false,
+  },
+  admin: {
+    type: false,
+    require: false,
+  },
   profilePictureUrl: {
     type: String,
     require: false,
