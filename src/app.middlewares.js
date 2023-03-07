@@ -2,6 +2,7 @@ import path from 'path';
 import CustomError from './api/api.errors.js';
 import { ENV } from './config/constants.js';
 import { ENV_ENUM } from './utils/enums.js';
+import Discord from './utils/discord.js';
 
 export function reactHandler(req, res, next) {
   try {
@@ -31,7 +32,12 @@ export function notFoundApiHandler(req, res, next) {
   }
 }
 
-export function errorApiHandler(err, req, res, next) {
+export async function errorApiHandler(err, req, res, next) {
+  await Discord.send({
+    message: err.message,
+    object: err.stack,
+  });
+
   const isApiPrefix = req.url.match(/\/api\//g);
   if (isApiPrefix) {
     console.error(err);
@@ -44,7 +50,6 @@ export function errorApiHandler(err, req, res, next) {
         data: null,
       });
     }
-
     return res.status(500).json({
       success: false,
       requestUrl: req.originalUrl,
