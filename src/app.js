@@ -5,6 +5,15 @@ import helmet from 'helmet';
 import express from 'express';
 import expressJSDocSwagger from 'express-jsdoc-swagger';
 
+// adminjs
+import AdminJS from 'adminjs';
+import AdminJSExpress from '@adminjs/express';
+import MongooseAdapter from '@adminjs/mongoose';
+
+// models
+import User from './api/v1/users/user.model.js';
+import Contact from './api/v1/contact/contact.model.js';
+
 import apiRoutes from './api/api.routes.js';
 import swaggerConfig from './config/swagger.config.js';
 
@@ -17,7 +26,20 @@ import { ENV } from './config/constants.js';
 
 const app = express();
 
-// TODO!: disable this for prod
+// TODO!: only available on dev. add authentication for prod!
+if (ENV === ENV_ENUM.DEVELOPMENT) {
+  AdminJS.registerAdapter(MongooseAdapter);
+
+  const admin = new AdminJS({
+    resources: [User, Contact],
+    // rootPath: '/admin',
+  });
+
+  const adminRouter = AdminJSExpress.buildRouter(admin);
+  app.use(admin.options.rootPath, adminRouter);
+}
+
+// TODO!: disable this for prod!
 app.use(
   helmet({
     contentSecurityPolicy: false,

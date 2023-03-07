@@ -15,6 +15,7 @@ closed carrot: amarillo's tech hub website
 - **[SwaggerDocs](https://github.com/brikev/express-jsdoc-swagger)** for API documentation
 - **[React Query](https://react-query-v3.tanstack.com/)** for data fetching on React
 - **[react-icons](https://react-icons.github.io/react-icons/)** for icons
+- **[adminJS](https://docs.adminjs.co/)** for CRUD operation dashboard
 
 ## 🏭 Enviroment
 
@@ -81,6 +82,12 @@ for api documentation
 
 ```
 http://localhost:8080/docs/api/
+```
+
+admin panel for CRUD operation
+
+```
+http://localhost:8080/admin
 ```
 
 for local mongodb UI
