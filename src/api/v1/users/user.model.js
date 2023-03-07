@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
 
 const UserSchema = new mongoose.Schema({
-  name: {
+  firstName: {
     type: String,
-    default: null,
+    require: false,
+  },
+  lastName: {
+    type: String,
     require: false,
   },
   username: {
@@ -30,16 +33,16 @@ const UserSchema = new mongoose.Schema({
     require: true,
     default: false,
   },
+  isMember: {
+    type: false,
+    require: false,
+  },
+  isAdmin: {
+    type: false,
+    require: false,
+  },
   aboutMe: {
     type: String,
-    require: false,
-  },
-  member: {
-    type: false,
-    require: false,
-  },
-  admin: {
-    type: false,
     require: false,
   },
   profilePictureUrl: {
