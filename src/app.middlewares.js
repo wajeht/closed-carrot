@@ -33,18 +33,15 @@ export function notFoundApiHandler(req, res, next) {
 }
 
 export async function errorApiHandler(err, req, res, next) {
+  await Discord.send({
+    message: err.message,
+    object: err.stack,
+  });
+
   const isApiPrefix = req.url.match(/\/api\//g);
   if (isApiPrefix) {
     console.error(err);
     if (err instanceof CustomError.ValidationError) {
-      await Discord.send({
-        success: false,
-        request_url: req.originalUrl,
-        errors: err?.errors,
-        message: ENV === ENV_ENUM.DEVELOPMENT ? err.stack : err.message,
-        data: null,
-      });
-
       return res.status(err.statusCode).json({
         success: false,
         request_url: req.originalUrl,
@@ -53,14 +50,6 @@ export async function errorApiHandler(err, req, res, next) {
         data: null,
       });
     }
-
-    await Discord.send({
-      success: false,
-      requestUrl: req.originalUrl,
-      message:
-        'The server encountered an internal error or misconfiguration and was unable to complete your request.',
-    });
-
     return res.status(500).json({
       success: false,
       requestUrl: req.originalUrl,
