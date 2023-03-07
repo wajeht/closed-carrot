@@ -2,6 +2,7 @@ import path from 'path';
 import CustomError from './api/api.errors.js';
 import { ENV } from './config/constants.js';
 import { ENV_ENUM } from './utils/enums.js';
+import Discord from './utils/discord.js';
 
 export function reactHandler(req, res, next) {
   try {
@@ -31,11 +32,19 @@ export function notFoundApiHandler(req, res, next) {
   }
 }
 
-export function errorApiHandler(err, req, res, next) {
+export async function errorApiHandler(err, req, res, next) {
   const isApiPrefix = req.url.match(/\/api\//g);
   if (isApiPrefix) {
     console.error(err);
     if (err instanceof CustomError.ValidationError) {
+      await Discord.send({
+        success: false,
+        request_url: req.originalUrl,
+        errors: err?.errors,
+        message: ENV === ENV_ENUM.DEVELOPMENT ? err.stack : err.message,
+        data: null,
+      });
+
       return res.status(err.statusCode).json({
         success: false,
         request_url: req.originalUrl,
@@ -44,6 +53,13 @@ export function errorApiHandler(err, req, res, next) {
         data: null,
       });
     }
+
+    await Discord.send({
+      success: false,
+      requestUrl: req.originalUrl,
+      message:
+        'The server encountered an internal error or misconfiguration and was unable to complete your request.',
+    });
 
     return res.status(500).json({
       success: false,
