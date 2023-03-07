@@ -83,6 +83,12 @@ for api documentation
 http://localhost:8080/docs/api/
 ```
 
+admin panel for CRUD operation
+
+```
+http://localhost:8080/admin
+```
+
 for local mongodb UI
 
 ```
