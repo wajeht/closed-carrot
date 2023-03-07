@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../data/users';
 import { SiGithub } from 'react-icons/si';
 import { ImLinkedin } from 'react-icons/im';
+import { MdEmail } from 'react-icons/md';
 
 export default function AboutUs() {
   return (
@@ -71,7 +72,7 @@ export default function AboutUs() {
 
                     <p className="p-3 rounded-sm font-light mt-3">{user.bio}</p>
 
-                    {user.linked || user.git ? (
+                    {user.linked || user.git || user.email ? (
                       <div className="inline-flex w-56 h-12 px-12 m-auto justify-around">
                         {user.git && (
                           <a href={user.git} target="_blank" rel="noreferrer">
@@ -81,6 +82,15 @@ export default function AboutUs() {
                         {user.linked && (
                           <a href={user.linked} target="_blank" rel="noreferrer">
                             <ImLinkedin className="text-4xl" />
+                          </a>
+                        )}
+                        {user.email && (
+                          <a
+                            onClick={() => (window.location = `mailto:${user.email}`)}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <MdEmail className="text-4xl hover:cursor-pointer	" />
                           </a>
                         )}
                       </div>
