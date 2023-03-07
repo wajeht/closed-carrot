@@ -5,10 +5,10 @@ import { ENV_ENUM } from './enums.js';
 
 class Discord {
   static async send({ message = '', object = null }) {
-    // if (ENV === ENV_ENUM.DEVELOPMENT) {
-    //   console.log(`***** skipping discord bot service in ${ENV} environment! *****`);
-    //   return;
-    // }
+    if (ENV === ENV_ENUM.DEVELOPMENT) {
+      console.log(`***** skipping discord bot service in ${ENV} environment! *****`);
+      return;
+    }
 
     let params = null;
 
