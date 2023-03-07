@@ -30,6 +30,18 @@ const UserSchema = new mongoose.Schema({
     require: true,
     default: false,
   },
+  aboutMe: {
+    type: String,
+    require: false,
+  },
+  profilePictureUrl: {
+    type: String,
+    require: false,
+  },
+  socialMediaLinks: {
+    type: Array,
+    require: false,
+  },
   verified_at: {
     type: Date,
     default: null,
@@ -42,4 +54,4 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-export const User = mongoose.model('User', UserSchema);
+export default mongoose.model('User', UserSchema);
