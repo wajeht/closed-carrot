@@ -28,6 +28,7 @@ export default [
     bio: 'William Manning is an IT Business Analyst and Project Coordinator with experience in software development, reporting, automation, and project management. He has worked on custom software using MS Access, Crystal Reporting, SQL, and VBA, and has developed automation processes for Mulesoft Developers. William is proficient in various front-end and back-end programming languages, such as JavaScript, React, Python, and SQL. He is skilled in project planning, risk management, cost estimation, and schedule reporting, and has experience in maintaining data integrity and configuration control. Additionally, William has a Bachelors degree in Business Management from West Texas A&M University, and an Associates degree in Business Administration from Amarillo College. ',
     linked: 'https://www.linkedin.com/in/william-manning-667a78201/',
     git: 'https://github.com/KillytheBid',
+    email: 'willmanning728@gmail.com',
   },
   {
     name: 'Karl',
