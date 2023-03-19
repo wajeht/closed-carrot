@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function PrivacyPolicy() {
   return (
-    <div className="mx-auto w-full max-w-7xl px-3 py-10">
+    <div className="mx-auto w-full max-w-7xl px-3 py-10 fade-in fade-in">
       <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </h2>
