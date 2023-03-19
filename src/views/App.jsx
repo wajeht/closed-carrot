@@ -1,4 +1,5 @@
 import './tailwind.css';
+import './animation.css';
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Route, Routes } from 'react-router-dom';

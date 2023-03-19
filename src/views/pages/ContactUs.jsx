@@ -37,7 +37,7 @@ export default function ContactUs() {
   }
 
   return (
-    <div className="mn-h-full">
+    <div className="mn-h-full fade-in">
       <div className="w-full bg-desk bg-cover bg-center bg-[#FF8B46]">
         <div className="w-full flex flex-col gap-5 justify-center items-center bg-black/50 backdrop-brightness-75">
           <div className="flex justify-center items-center flex-col min-h-[300px] md:min-h-[500px]">

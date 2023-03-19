@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md';
 
 export default function AboutUs() {
   return (
-    <>
+    <div className="fade-in">
       <div>
         <div className="mx-auto w-full max-w-7xl px-3 py-10">
           <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
@@ -98,6 +98,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

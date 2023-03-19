@@ -3,7 +3,7 @@ import Users from '../components/Users';
 
 export default function Home() {
   return (
-    <div className="flex flex-col p-5 items-center gap-5">
+    <div className="flex flex-col p-5 items-center gap-5 fade-in">
       {/* <div className="flex flex-col gap-1">
         <p>this is an example of showcasing a react page with backend api call</p>
 
