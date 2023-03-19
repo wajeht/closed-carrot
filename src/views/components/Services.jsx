@@ -21,7 +21,7 @@ export default function Services() {
           {/* WEB DEV */}
 
           <div className="group">
-            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
+            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaGlobeAmericas className="text-5xl text-orange-600 mx-auto m-5 group-hover:text-white" />
               <span className="text-center">
                 <h4 className="font-bold">Website Development</h4>
@@ -32,7 +32,7 @@ export default function Services() {
 
           {/* DIGITAL MARKETING */}
           <div className="group">
-            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
+            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaCameraRetro className="text-5xl text-orange-600 group-hover:text-white mx-auto m-5" />
               <span className="text-center">
                 <h4 className="font-bold">Digital Marketing</h4>
@@ -46,7 +46,7 @@ export default function Services() {
 
           {/* Digital Content Creation*/}
           <div className="group">
-            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
+            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaRegNewspaper className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
               <span className="text-center">
                 <h4 className="font-bold">Digital Content Creation</h4>
@@ -59,7 +59,7 @@ export default function Services() {
 
           {/* Website Hosting and Server Management */}
           <div className="group">
-            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
+            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaServer className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
               <span className="text-center">
                 <h4 className="font-bold">Website Hosting and Server Management</h4>
@@ -72,7 +72,7 @@ export default function Services() {
 
           {/* IT Support */}
           <div className="group">
-            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
+            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaTeamspeak className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
               <span className="text-center">
                 <h4 className="font-bold"> IT Support</h4>
@@ -86,7 +86,7 @@ export default function Services() {
 
           {/* Tutoring Services */}
           <div className="group">
-            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4 hover:scale-110 group-hover:text-white group-hover:bg-orange-500">
+            <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaQuestion className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
 
               <span className="text-center">
