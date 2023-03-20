@@ -7,7 +7,7 @@ export default function Marketing() {
     <div className="mx-auto w-full max-w-7xl px-3 py-10 ">
       {/* title */}
       <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What about you?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Join the Tech Hub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </h2>
       <br />
       <br />
@@ -23,28 +23,24 @@ export default function Marketing() {
 
         <div className="col-span-2 flex justify-center items-center flex-col">
           <p className="mb-3">
-            Are you looking to develop your tech skills and gain hands-on experience in a supportive
-            and collaborative community? Considered joining Closed Carrot as a contributing member!
+            Belong to a network of like-minded professionals eager to create and learn. Members of
+            the Closed Carrot Tech Hub have the opportunity to expand their skills and take on
+            paying roles. Placement on projects is based on skillsets and desired time commitment.
           </p>
           <p className="mb-3">
-            Are you an entrepreneur or small business owner seeking innovative tech solutions to
-            drive your growth and success? Closed Carrot is a cooperative full of talented members
-            ready to create your vision!
+            We're developers, designers, and creatives just like you. Join our community and feel at
+            home. Complete our contact form to inquire about membership!
           </p>
-          <p className="mb-3">
-            We are a dynamic and forward-thinking tech ecosystem that values learning, growth, and
-            social responsibility. Our members are passionate about using technology to impact the
-            community positively.
-          </p>
+
           <br />
-          <Link
+          {/* <Link
             to="/contact-us"
             title="ContactUs"
             className="px-5 py-3  bg-orange-500 hover:bg-orange-600 text-white rounded-md justify-center items-end font-bold"
             onClick={ScrollToTop}
           >
             Contact Us
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
