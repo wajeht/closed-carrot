@@ -25,7 +25,7 @@ export default function Services() {
               <FaGlobeAmericas className="text-5xl text-orange-600 mx-auto m-5 group-hover:text-white" />
               <span className="text-center">
                 <h4 className="font-bold">Website Development</h4>
-                <p>Building websites and web applications that look great and work flawlessly.</p>
+                <p>Custom websites developed and maintained to fit your business operation.</p>
               </span>
             </div>
           </div>
@@ -35,10 +35,9 @@ export default function Services() {
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaCameraRetro className="text-5xl text-orange-600 group-hover:text-white mx-auto m-5" />
               <span className="text-center">
-                <h4 className="font-bold">Digital Marketing</h4>
+                <h4 className="font-bold">Project Management</h4>
                 <p>
-                  Getting the word out about awesome products and services through social media,
-                  emails, and search engines.
+                  Timely organization of teams & assigned tasks for short and long-term projects
                 </p>
               </span>
             </div>
@@ -62,10 +61,8 @@ export default function Services() {
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaServer className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
               <span className="text-center">
-                <h4 className="font-bold">Website Hosting and Server Management</h4>
-                <p>
-                  Making sure your website stays up and running smoothly, like a well-oiled machine.
-                </p>
+                <h4 className="font-bold">Marketing</h4>
+                <p>Content creation & ad placement to accurately target your audience</p>
               </span>
             </div>
           </div>
@@ -75,11 +72,8 @@ export default function Services() {
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
               <FaTeamspeak className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
               <span className="text-center">
-                <h4 className="font-bold"> IT Support</h4>
-                <p>
-                  Helping you overcome tech troubles and keeping your computer systems running
-                  smoothly.
-                </p>
+                <h4 className="font-bold"> Branding</h4>
+                <p>Fresh logos and identities for new and existing brands</p>
               </span>
             </div>
           </div>
@@ -90,11 +84,8 @@ export default function Services() {
               <FaQuestion className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
 
               <span className="text-center">
-                <h4 className="font-bold"> Tutoring Services</h4>
-                <p>
-                  Sharing knowledge and helping students reach their academic goals, one step at a
-                  time.
-                </p>
+                <h4 className="font-bold">App Development</h4>
+                <p>Apps designed to improve your services & user experience</p>
               </span>
             </div>
           </div>

@@ -17,10 +17,10 @@ export default function Hero() {
 
           <Link
             to="/contact-us"
-            title="Get started today!"
+            title="Contact us"
             className="px-5 py-3 text bg-orange-500 hover:bg-orange-600 text-white rounded-md font-bold fade-in-heading animation-delay-1"
           >
-            Get started today!
+            Contact us
           </Link>
         </div>
       </div>
