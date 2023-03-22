@@ -88,7 +88,7 @@ export default function ContactUs() {
 
       <div className="mx-auto w-full max-w-7xl p-3">
         <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get in touch with us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's Connect&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </h2>
 
         <br />

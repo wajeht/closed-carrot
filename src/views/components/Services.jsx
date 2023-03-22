@@ -3,9 +3,16 @@ import {
   FaCameraRetro,
   FaRegNewspaper,
   FaServer,
+  FaCode,
+  FaFileAlt,
   FaTeamspeak,
   FaQuestion,
+  FaRegCommentAlt,
+  FaMobileAlt,
 } from 'react-icons/fa';
+
+import { IoIosMegaphone, IoMdCheckmarkCircle } from 'react-icons/io';
+import { ImNewspaper } from 'react-icons/im';
 
 export default function Services() {
   return (
@@ -22,7 +29,7 @@ export default function Services() {
 
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
-              <FaGlobeAmericas className="text-5xl text-orange-600 mx-auto m-5 group-hover:text-white" />
+              <FaCode className="text-5xl text-orange-600 mx-auto m-5 group-hover:text-white" />
               <span className="text-center">
                 <h4 className="font-bold">Website Development</h4>
                 <p>Custom websites developed and maintained to fit your business operation.</p>
@@ -33,7 +40,7 @@ export default function Services() {
           {/* DIGITAL MARKETING */}
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
-              <FaCameraRetro className="text-5xl text-orange-600 group-hover:text-white mx-auto m-5" />
+              <FaFileAlt className="text-5xl text-orange-600 group-hover:text-white mx-auto m-5" />
               <span className="text-center">
                 <h4 className="font-bold">Project Management</h4>
                 <p>
@@ -46,7 +53,7 @@ export default function Services() {
           {/* Digital Content Creation*/}
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
-              <FaRegNewspaper className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
+              <ImNewspaper className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
               <span className="text-center">
                 <h4 className="font-bold">Digital Content Creation</h4>
                 <p>
@@ -59,7 +66,7 @@ export default function Services() {
           {/* Website Hosting and Server Management */}
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
-              <FaServer className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
+              <IoIosMegaphone className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5" />
               <span className="text-center">
                 <h4 className="font-bold">Marketing</h4>
                 <p>Content creation & ad placement to accurately target your audience</p>
@@ -70,7 +77,7 @@ export default function Services() {
           {/* IT Support */}
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
-              <FaTeamspeak className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
+              <IoMdCheckmarkCircle className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
               <span className="text-center">
                 <h4 className="font-bold"> Branding</h4>
                 <p>Fresh logos and identities for new and existing brands</p>
@@ -81,7 +88,7 @@ export default function Services() {
           {/* Tutoring Services */}
           <div className="group">
             <div className="bg-white rounded-md p-5 shadow-md flex flex-col gap-4  group-hover:text-white group-hover:bg-orange-500">
-              <FaQuestion className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
+              <FaMobileAlt className="text-5xl text-orange-600  group-hover:text-white mx-auto m-5 " />
 
               <span className="text-center">
                 <h4 className="font-bold">App Development</h4>
