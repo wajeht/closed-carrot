@@ -22,7 +22,7 @@ export default function AboutUs() {
                 <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                   {/* image */}
                   <img
-                    className="w-full h-72 object-none rounded-md hover:object-none hover:object-scale-down"
+                    className="h-auto max-w-full object-none rounded-md hover:object-none hover:object-scale-down"
                     src={user.image}
                     alt={user.name}
                   />
@@ -78,7 +78,7 @@ export default function AboutUs() {
                 <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                   {/* image */}
                   <img
-                    className="w-full h-72 object-cover rounded-md hover:object-none hover:object-scale-down"
+                    className="h-auto max-w-full object-cover rounded-md hover:object-none hover:object-scale-down"
                     src={user.image}
                     alt={user.name}
                   />
