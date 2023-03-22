@@ -1,12 +1,14 @@
 import netty from '../assets/images/headshots/netty.jpeg';
 import gerado from '../assets/images/headshots/gerardo.jpg';
 import mcall from '../assets/images/headshots/mccall.jpg';
-import will from '../assets/images/headshots/will.jpeg';
+import will from '../assets/images/headshots/will.png';
 import karl from '../assets/images/headshots/KarlShinn.jpg';
 import david from '../assets/images/headshots/davidwilson2.png';
 import jermy from '../assets/images/headshots/jeremy.png';
 import jglover from '../assets/images/headshots/jglover.jpg';
 import kyaw from '../assets/images/headshots/jaw.png';
+import bill from '../assets/images/headshots/billglover.jpg';
+import mark from '../assets/images/headshots/marknair.png';
 
 export default [
   {
@@ -23,7 +25,7 @@ export default [
   },
   {
     name: 'Will',
-    title: 'Full-Stack Developer',
+    title: 'Software Developer',
     image: will,
     bio: "William Manning is an IT Business Analyst and Project Coordinator with experience in software development, reporting, automation, and project management. He has worked on custom software using MS Access, Crystal Reporting, SQL, and VBA, and has developed automation processes for Mulesoft Developers. William is proficient in various front-end and back-end programming languages, such as JavaScript, React, Python, and SQL. He is skilled in project planning, risk management, cost estimation, and schedule reporting, and has experience in maintaining data integrity and configuration control. Additionally, William has a bachelor's degree in Business Management from West Texas A&M University and an associate's degree in Business Administration from Amarillo College.",
     linked: 'https://www.linkedin.com/in/william-manning-667a78201/',
@@ -32,7 +34,7 @@ export default [
   },
   {
     name: 'Karl',
-    title: 'Full-Stack Developer',
+    title: 'Software Developer',
     image: karl,
     bio: 'Karl is a Regional Lead for a tech company specializing in green data centers. He has expertise in various tech aspects, including full-stack web development, User Interface development, automation, blockchain, and project management. His programming competencies include Javascript, HTML/CSS, React, Svelte, and he is adept at working with SQL and NoSQL databases. Before his tech development work, Karl had over 13 years of military and Federal service, employing various technologies within traditional and special operations.',
     linked: 'https://www.linkedin.com/in/krshinn',
@@ -40,7 +42,7 @@ export default [
   },
   {
     name: 'David',
-    title: 'Front-End Developer',
+    title: 'Software Developer',
     image: david,
     bio: 'David possesses a Bachelor’s degree in Psychology with a minor in Fine Arts from Eastern New Mexico University, a Master of Arts in Postsecondary Education from San Diego State University, a Master of Education in Instructional Design & Technology from West Texas A&M University, as well as a certificate in Full-Stack Web Development from Amarillo College. His career background includes education, digital marketing, technology, and web design. David’s passions include photography, videography, graphic design, and hot-air ballooning. Regarding web development, David’s focus has always been on user experience and usability; he loves building responsive websites that are aesthetically pleasing and easy to use.    ',
     linked: 'https://www.linkedin.com/in/davidmichaelwilson1981',
@@ -54,7 +56,7 @@ export default [
   },
   {
     name: 'Kyaw ',
-    title: 'Full-Stack Developer',
+    title: 'Software Developer',
     image: kyaw,
     bio: 'Kyaw is a seasoned full-stack web developer. He is passionate about creating dynamic and engaging web applications that deliver value and enhance user experience. Possessing strong technical skills and knowledge in both front-end and back-end development, he has the ability to design and implement robust and scalable solutions that meet business requirements and exceed user expectations. He is skilled in using a range of programming languages and frameworks, including HTML, CSS, JavaScript, Node.js, React, and is committed to staying up-to-date with the latest industry trends and technologies. He is a creative problem-solver who enjoys tackling complex challenges and finding elegant solutions that optimize performance, security, and accessibility. With excellent communication, collaboration, and project management skills, he can work effectively independently and as part of a team. He is dedicated to delivering high-quality work that meets and exceeds client expectations.    ',
     linked: 'https://www.linkedin.com/in/kyawsny/',
@@ -68,10 +70,22 @@ export default [
   },
   {
     name: 'Gerardo',
-    title: 'Full-Stack Developer',
+    title: 'Software Developer',
     image: gerado,
     bio: 'Gerardo is the Lead Software Engineer for a tech startup that develops software for private security firms. He obtained an Associate’s Degree in Engineering Computer Science from Amarillo College and continued his Computer Science Major at West Texas A&M University. Gerardo switched career goals to pursue his passion for helping others and served as a Catholic Missionary in the Central American country of Nicaragua for ten years. He returned to Texas in 2020 and has worked as a Full-Stack Web Developer. Gerardo’s expertise is in Backend Web Development, specializing in MERN Stack applications, API design, SQL & Mongo Database development, Cloud Micro-Services and Infrastructure, and CI/CD.    ',
     linked: 'https://www.linkedin.com/in/gera-camo-jr/',
     git: 'https://github.com/gercamjr',
+  },
+  {
+    name: 'Mark',
+    title: 'Advisor',
+    image: mark,
+    bio: "Mark Nair has spent more than 20 years in the entertainment industry and tech.He produced one of the Internet’s earliest and largest live-streaming events for Nick Lachey and 98 Degrees, as well as produced innovative digital marketing campaigns for Willie Nelson, Stephen King, and many other well-known artists. He’s worked with Thomas Dolby and Headspace Labs on the design of early polyphonic ringtones. He has also worked with Nokia on content for their early digital smartphone prototypes as well as with Phillips Electronics on smart audio waveform interpretation for digital compression. He's worked with Quanta in Taiwan, Hong Kong, and Shenzhen, China to designing a new type of e-book reader based on dynamic LCD light-sensitive displays. He teaches web and iOS development, game design, and, yes, economics.",
+  },
+  {
+    name: 'Bill',
+    title: 'Advisor',
+    image: bill,
+    bio: 'Bill helps make sure bits and bytes stay out of the way of doing the things that really matter. He began working with GlobalGiving in 2018 and now serves as their Director of Engineering. Previously, Bill and his wife Jerri were co-founders of Bright Canopy (now part of Nutanix). Bill is the former Chief Architect for Sabre Airline Solutions and prior to that worked with ITA (now part of Google) and the Sun Microsystems Java Center (now Oracle). Bill enjoys automating things and has programmed dams, cameras, phones, websites, bottles, and buildings.',
   },
 ];
