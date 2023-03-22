@@ -1,22 +1,22 @@
-import { faker } from '@faker-js/faker';
+// import { faker } from '@faker-js/faker';
 
 export function getUsers(req, res) {
   // todo
 
-  const users = [];
+  // const users = [];
 
-  for (let i = 0; i < 4; i++) {
-    const user = {
-      id: faker.datatype.uuid(),
-      avatar: faker.internet.avatar(),
-      username: faker.internet.userName(),
-      email: faker.internet.email(),
-      password: faker.internet.password(),
-    };
-    users.push(user);
-  }
+  // for (let i = 0; i < 4; i++) {
+  //   const user = {
+  //     id: faker.datatype.uuid(),
+  //     avatar: faker.internet.avatar(),
+  //     username: faker.internet.userName(),
+  //     email: faker.internet.email(),
+  //     password: faker.internet.password(),
+  //   };
+  //   users.push(user);
+  // }
 
-  return res.success({ data: users });
+  return res.success({ data: [] });
 }
 
 export function getUser(req, res) {

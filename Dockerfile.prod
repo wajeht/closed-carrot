@@ -1,15 +1,45 @@
-FROM node:19-alpine
+# FROM node:19-alpine
 
-ENV ENV production
+# ENV ENV production
+
+# WORKDIR /usr/src/app
+
+# COPY ./package.json ./
+# COPY ./package-lock.json ./
+
+# COPY ./ ./
+
+# RUN npm install
+# RUN npm run build
+
+# CMD ["npm", "run", "start"]
+
+# Use a recent LTS version of Node.js
+FROM node:19-alpine AS build
 
 WORKDIR /usr/src/app
 
-COPY ./package.json ./
-COPY ./package-lock.json ./
+COPY package*.json ./
 
-COPY ./ ./
+# Install dependencies using `npm ci`
+RUN npm ci --only=production
 
-RUN npm install
+COPY . .
+
+# Build your application
 RUN npm run build
 
-CMD ["npm", "run", "start"]
+# Use a smaller base image for running your application
+FROM node:19-alpine
+
+WORKDIR /usr/src/app
+
+# Create a non-root user and switch to that user
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+
+# Copy the built application from the previous stage
+COPY --from=build /usr/src/app .
+
+# Set the default command to run your application
+CMD ["npm", "start"]
