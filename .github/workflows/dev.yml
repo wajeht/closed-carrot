@@ -3,101 +3,46 @@ name: Dev
 on: push
 
 jobs:
-  format:
-    name: Prettier format
+  build:
     runs-on: ubuntu-latest
+    container:
+      image: alpine:3.13
     if: github.ref == 'refs/heads/dev'
-
     strategy:
       matrix:
-        node-version: [19.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
-      - name: Format codes
-        run: npm run format
-
-  lint:
-    name: ESLint
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
-
-    strategy:
-      matrix:
-        node-version: [19.x]
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm i
-
-      - name: Lint codes
-        run: npm run lint
-
-  test:
-    name: Unit tests
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
-    
-    strategy:
-      matrix:
-        node-version: [19.x]
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm i
+      - name: Format and lint codes
+        run: |
+          npm run format
+          npm run lint
 
       - name: Test codes
-        run: npm run test
+        run: npm run test --parallel
 
-  deploy-dev:
-    needs: [format, lint, test]
-    name: Deploy to dev server
-    if: github.ref == 'refs/heads/dev'
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [19.x]
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-
-      - uses: a7ul/tar-action@v1.1.3
-        with:
-          command: c
-          cwd: './'
-          files: ./
-          outPath: deploy.tar
-
-      - name: Deploy App to CapRover
+      - name: Deploy to dev server
+        if: always()
         uses: caprover/deploy-from-github@v1.1.2
         with:
           server: '${{ secrets.CAPROVER_SERVER_DEV }}'
