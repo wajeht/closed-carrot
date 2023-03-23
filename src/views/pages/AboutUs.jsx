@@ -11,18 +11,19 @@ export default function AboutUs() {
         <div className=" mx-auto w-full max-w-7xl px-3 py-10">
           <br />
           <br />
+          {/* NON-ADVISORS */}
           <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advisors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </h2>
           <br />
           <br />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {data.map((user, idx) => {
-              return user.title == 'Advisor' ? (
+              return user.title != 'Advisor' ? (
                 <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                   {/* image */}
                   <img
-                    className="h-auto max-w-full object-none rounded-md hover:object-none hover:object-scale-down"
+                    className="h-auto max-w-full object-cover rounded-md hover:object-none hover:object-scale-down"
                     src={user.image}
                     alt={user.name}
                   />
@@ -64,21 +65,24 @@ export default function AboutUs() {
               );
             })}
           </div>
+          {/* ADVISORS */}
           <br />
           <br />
-          {/* NON-ADVISORS */}
           <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advisors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </h2>
           <br />
           <br />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5">
             {data.map((user, idx) => {
-              return user.title != 'Advisor' ? (
-                <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              return user.title == 'Advisor' ? (
+                <div
+                  key={idx}
+                  className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 items: center;"
+                >
                   {/* image */}
                   <img
-                    className="h-auto max-w-full object-cover rounded-md hover:object-none hover:object-scale-down"
+                    className="h-auto max-w-full  object-cover rounded-md hover:object-none hover:object-scale-down"
                     src={user.image}
                     alt={user.name}
                   />

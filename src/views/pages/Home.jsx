@@ -9,10 +9,10 @@ import Services from '../components/Services';
 export default function Home() {
   return (
     <>
-      <Hero />
-      <CoreValues />
-      <Marketing />
-      <Services />
+      <Hero onClick={() => window.scrollTo(0, 0)} />
+      <CoreValues onClick={() => window.scrollTo(0, 0)} />
+      <Marketing onClick={() => window.scrollTo(0, 0)} />
+      <Services onClick={() => window.scrollTo(0, 0)} />
       {/* <Clients /> */}
     </>
   );
