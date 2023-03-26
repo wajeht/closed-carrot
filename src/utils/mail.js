@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { EMAIL } from '../config/constants.js';
 
 class Mail {
-  static send({ from = EMAIL.EMAIL, to, subject, message }) {
+  static send({ from, to = EMAIL.EMAIL, subject, message }) {
     const transporter = nodemailer.createTransport({
       host: EMAIL.HOST,
       port: EMAIL.PORT,

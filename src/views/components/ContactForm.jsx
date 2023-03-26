@@ -3,6 +3,7 @@ import axios from 'axios';
 
 export default function ContactForm() {
   const [subject, setSubject] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [forBearsOnly, setTrap] = useState('');
@@ -18,11 +19,13 @@ export default function ContactForm() {
         subject,
         email,
         message,
+        name,
         forBearsOnly,
       })
       .then(() => {
         // clear the form
         setSubject('');
+        setName('');
         setEmail('');
         setMessage('');
 
@@ -59,6 +62,21 @@ export default function ContactForm() {
           {success === true ? (
             <p className="bg-green-200 p-4 rounded-md">You&apos;re message has been sent!</p>
           ) : null}
+
+          {/* name */}
+          <div className="flex flex-col gap-1">
+            <label htmlFor="subject">Name</label>
+            <input
+              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100"
+              type="text"
+              name="name"
+              id="name"
+              required
+              disabled={loading}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
 
           {/* subject */}
           <div className="flex flex-col gap-1">
