@@ -9,8 +9,6 @@ export default function AboutUs() {
     <div className="fade-in">
       <div className="bg-orange-100">
         <div className=" mx-auto w-full max-w-7xl px-3 py-10">
-          <br />
-          <br />
           {/* NON-ADVISORS */}
           <h2 className="text-2xl font-bold text-center underline decoration-3 decoration-orange-500 underline-offset-4">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -82,7 +80,7 @@ export default function AboutUs() {
                 >
                   {/* image */}
                   <img
-                    className="h-auto max-w-full  object-cover rounded-md hover:object-none hover:object-scale-down"
+                    className="h-auto max-w-full  object-cover rounded-md hover:object-none"
                     src={user.image}
                     alt={user.name}
                   />

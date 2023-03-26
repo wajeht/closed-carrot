@@ -32,7 +32,7 @@ if (ENV === ENV_ENUM.DEVELOPMENT) {
 
   const admin = new AdminJS({
     resources: [User, Contact],
-    // rootPath: '/admin',
+    rootPath: '/admin',
   });
 
   const adminRouter = AdminJSExpress.buildRouter(admin);
