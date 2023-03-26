@@ -20,11 +20,7 @@ export default function AboutUs() {
               return user.title != 'Advisor' ? (
                 <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                   {/* image */}
-                  <img
-                    className="h-auto max-w-full object-cover rounded-md hover:object-none hover:object-scale-down"
-                    src={user.image}
-                    alt={user.name}
-                  />
+                  <img className="min-w-full rounded-md" src={user.image} alt={user.name} />
 
                   {/* bio */}
                   <div className="flex flex-col gap-2 mt-5">
@@ -71,19 +67,12 @@ export default function AboutUs() {
           </h2>
           <br />
           <br />
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
             {data.map((user, idx) => {
               return user.title == 'Advisor' ? (
-                <div
-                  key={idx}
-                  className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 items: center;"
-                >
+                <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                   {/* image */}
-                  <img
-                    className="h-auto max-w-full  object-cover rounded-md hover:object-none"
-                    src={user.image}
-                    alt={user.name}
-                  />
+                  <img className="min-w-full rounded-md" src={user.image} alt={user.name} />
 
                   {/* bio */}
                   <div className="flex flex-col gap-2 mt-5">
