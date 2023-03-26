@@ -1,8 +1,8 @@
 import Contact from './contact.model.js';
 
-export async function saveContact(email, subject, message) {
+export async function saveContact({ name, email, subject, message }) {
   return Contact.create({
-    name: email,
+    name: name,
     subject: subject,
     email: email,
     message: message,

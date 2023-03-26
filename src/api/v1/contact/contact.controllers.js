@@ -24,7 +24,7 @@ export async function postContact(req, res) {
     `,
   });
 
-  await saveContact(email, subject, message);
+  await saveContact({ name, email, subject, message });
 
   await Discord.send({ message: subject, object: req.body });
 
