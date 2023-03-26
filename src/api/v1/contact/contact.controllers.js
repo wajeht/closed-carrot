@@ -11,6 +11,7 @@ export async function postContact(req, res) {
 
   await Mail.send({
     from: email,
+    to: email,
     subject,
     message,
   });
