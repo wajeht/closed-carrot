@@ -67,7 +67,7 @@ export default function ContactForm() {
           <div className="flex flex-col gap-1">
             <label htmlFor="subject">Name</label>
             <input
-              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100"
+              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100 focus:outline-none focus:border-orange-400"
               type="text"
               name="name"
               id="name"
@@ -82,7 +82,7 @@ export default function ContactForm() {
           <div className="flex flex-col gap-1">
             <label htmlFor="subject">Subject</label>
             <input
-              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100"
+              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100 focus:outline-none focus:border-orange-400"
               type="text"
               name="subject"
               id="subject"
@@ -97,7 +97,7 @@ export default function ContactForm() {
           <div className="flex flex-col gap-1">
             <label htmlFor="email">Email</label>
             <input
-              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100"
+              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100 focus:outline-none focus:border-orange-400"
               type="email"
               name="email"
               id="email"
@@ -112,7 +112,7 @@ export default function ContactForm() {
           <div className="flex flex-col gap-1">
             <label htmlFor="message">Message</label>
             <textarea
-              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100"
+              className="p-2 rounded-md disabled:bg-slate-300 bg-orange-50 border border-orange-100 focus:outline-none focus:border-orange-400"
               name="message"
               id="message"
               cols="30"
