@@ -31,9 +31,11 @@ export default function AboutUs() {
                       <span className="font-light text-xl"> - {user.title} </span>
                     </h3>
 
-                    <p className="p-3 rounded-sm font-light mt-3">{user.bio}</p>
+                    <p className="p-3 rounded-sm font-light mt-3 max-h-60 overflow-y-scroll">
+                      {user.bio}
+                    </p>
 
-                    {user.linked || user.git || user.email ? (
+                    {/* {user.linked || user.git || user.email ? (
                       <div className="inline-flex w-56 h-12 px-12 m-auto justify-around">
                         {user.git && (
                           <a href={user.git} target="_blank" rel="noreferrer">
@@ -51,7 +53,7 @@ export default function AboutUs() {
                           </a>
                         )}
                       </div>
-                    ) : null}
+                    ) : null} */}
                   </div>
                 </div>
               ) : (
