@@ -22,7 +22,7 @@ closed carrot: amarillo's tech hub website
 staging/dev environment
 
 ```
-https://dev.closedcarrot.com/
+https://closed-carrot.jaw.dev/
 ```
 
 # 👨‍💻 Getting started
