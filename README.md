@@ -1,6 +1,6 @@
 # 🥕 Closed Carrot: Amarillo's Tech Hub
 
-[![Node.js CI](https://github.com/closed-carrot/website/actions/workflows/dev.yml/badge.svg?branch=dev)](https://github.com/closed-carrot/website/actions/workflows/dev.yml) [![Node.js CI](https://github.com/closed-carrot/website/actions/workflows/prod.yml/badge.svg?branch=main)](https://github.com/closed-carrot/website/actions/workflows/prod.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/closed-carrot/app/blob/main/LICENSE)
+[![Node.js CI](https://github.com/wajeht/closed-carrot/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/wajeht/closed-carrot/actions/workflows/ci.yml) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/tXUBzt335A) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/closed-carrot/app/blob/main/LICENSE)
 
 closed carrot: amarillo's tech hub website
 
@@ -23,12 +23,6 @@ staging/dev environment
 
 ```
 https://dev.closedcarrot.com/
-```
-
-production environment
-
-```
-https://closedcarrot.com/
 ```
 
 # 👨‍💻 Getting started
