@@ -1,4 +1,4 @@
-name: Dev
+name: Prod
 
 on: push
 
@@ -6,7 +6,7 @@ jobs:
   format:
     name: Prettier format
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/main'
 
     strategy:
       matrix:
@@ -29,7 +29,7 @@ jobs:
   lint:
     name: ESLint
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/main'
 
     strategy:
       matrix:
@@ -52,8 +52,8 @@ jobs:
   test:
     name: Unit tests
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev'
-    
+    if: github.ref == 'refs/heads/main'
+
     strategy:
       matrix:
         node-version: [19.x]
@@ -72,10 +72,10 @@ jobs:
       - name: Test codes
         run: npm run test
 
-  deploy-dev:
+  deploy-prod:
     needs: [format, lint, test]
-    name: Deploy to dev server
-    if: github.ref == 'refs/heads/dev'
+    name: Deploy to prod server
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     strategy:
@@ -100,6 +100,6 @@ jobs:
       - name: Deploy App to CapRover
         uses: caprover/deploy-from-github@v1.1.2
         with:
-          server: '${{ secrets.CAPROVER_SERVER_DEV }}'
-          app: '${{ secrets.APP_NAME_DEV }}'
-          token: '${{ secrets.APP_TOKEN_DEV }}'
+          server: '${{ secrets.CAPROVER_SERVER }}'
+          app: '${{ secrets.APP_NAME }}'
+          token: '${{ secrets.APP_TOKEN }}'
