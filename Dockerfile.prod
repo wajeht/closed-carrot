@@ -1,19 +1,3 @@
-# FROM node:19-alpine
-
-# ENV ENV production
-
-# WORKDIR /usr/src/app
-
-# COPY ./package.json ./
-# COPY ./package-lock.json ./
-
-# COPY ./ ./
-
-# RUN npm install
-# RUN npm run build
-
-# CMD ["npm", "run", "start"]
-
 # Use a recent LTS version of Node.js
 FROM node:19-alpine AS build
 
@@ -32,6 +16,8 @@ RUN npm run build
 # Use a smaller base image for running your application
 FROM node:19-alpine
 
+RUN apk --no-cache add curl
+
 WORKDIR /usr/src/app
 
 # Create a non-root user and switch to that user
@@ -40,6 +26,10 @@ USER appuser
 
 # Copy the built application from the previous stage
 COPY --from=build /usr/src/app .
+
+EXPOSE 8089
+
+HEALTHCHECK CMD curl -f http://localhost:8089/api/health || exit 1
 
 # Set the default command to run your application
 CMD ["npm", "start"]
