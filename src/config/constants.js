@@ -23,3 +23,5 @@ export const DISCORD = {
   TOKEN: process.env.DISCORD_TOKEN,
   URL: process.env.DISCORD_URL,
 };
+
+export const SENTRY_URL = process.env.SENTRY_URL;
