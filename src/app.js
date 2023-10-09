@@ -4,6 +4,7 @@ import compression from 'compression';
 import helmet from 'helmet';
 import express from 'express';
 import expressJSDocSwagger from 'express-jsdoc-swagger';
+import Sentry from '@sentry/node';
 
 // adminjs
 import AdminJS from 'adminjs';
@@ -22,9 +23,12 @@ import * as apiMiddlewares from './api/api.middlewares.js';
 import * as rateLimiters from './config/rate-limiters.config.js';
 
 import { ENV_ENUM } from './utils/enums.js';
-import { ENV } from './config/constants.js';
+import { ENV, SENTRY_URL } from './config/constants.js';
 
 const app = express();
+
+Sentry.init({ dsn: SENTRY_URL });
+app.use(Sentry.Handlers.requestHandler());
 
 // TODO!: only available on dev. add authentication for prod!
 if (ENV === ENV_ENUM.DEVELOPMENT) {
@@ -52,6 +56,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(path.join(process.cwd(), 'public'))));
 
+// app.get('/debug-sentry', (req, res) => {
+//   throw new Error('My first Sentry error!');
+// });
+
 app.use(apiMiddlewares.httpApiResponses);
 
 expressJSDocSwagger(app)(swaggerConfig);
@@ -66,6 +74,7 @@ if (ENV === ENV_ENUM.PRODUCTION) {
   app.use('*', appMiddlewares.reactHandler);
 }
 
+app.use(Sentry.Handlers.errorHandler());
 app.use(appMiddlewares.notFoundApiHandler);
 app.use(appMiddlewares.errorApiHandler);
 

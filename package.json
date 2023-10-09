@@ -24,6 +24,7 @@
   "dependencies": {
     "@adminjs/express": "^5.1.0",
     "@adminjs/mongoose": "^3.0.3",
+    "@sentry/node": "^7.73.0",
     "@tanstack/react-router": "^0.0.1-beta.48",
     "@vitejs/plugin-react": "^3.1.0",
     "adminjs": "^6.8.7",
