@@ -1,23 +1,28 @@
-# Use a recent LTS version of Node.js
-FROM node:19-alpine AS build
+# Use a recent LTS version of Node.js as the base image
+FROM node:20-alpine AS build
 
+# Set the working directory in the container
 WORKDIR /usr/src/app
 
+# Copy package.json and package-lock.json for dependency installation
 COPY package*.json ./
 
-# Install dependencies using `npm ci`
+# Install production dependencies using `npm ci`
 RUN npm ci --only=production
 
+# Copy the rest of the application code into the container
 COPY . .
 
 # Build your application
 RUN npm run build
 
 # Use a smaller base image for running your application
-FROM node:19-alpine
+FROM node:20-alpine
 
+# Install curl for health checking
 RUN apk --no-cache add curl
 
+# Set the working directory in the container
 WORKDIR /usr/src/app
 
 # Create a non-root user and switch to that user
@@ -27,8 +32,10 @@ USER appuser
 # Copy the built application from the previous stage
 COPY --from=build /usr/src/app .
 
+# Expose port 8089 for your application
 EXPOSE 8089
 
+# Define a health check command using curl
 HEALTHCHECK CMD curl -f http://localhost:8089/api/health || exit 1
 
 # Set the default command to run your application
