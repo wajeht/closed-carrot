@@ -1,35 +1,35 @@
 {
-    "dotenv.enableAutocloaking": false,
-    "cSpell.words": [
-        "adminjs",
-        "amarillos",
-        "billglover",
-        "caprover",
-        "davidwilson",
-        "Fontawesome",
-        "gerado",
-        "headshots",
-        "jermy",
-        "jglover",
-        "kyaw",
-        "linebreak",
-        "marknair",
-        "mcall",
-        "middlewares",
-        "Shinn",
-        "svgs",
-        "tailwindcss",
-        "tanstack",
-        "Teamspeak",
-        "Twotone",
-        "wajeht"
-    ],
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/built": true,
-        "**/coverge": true
-    },
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "dotenv.enableAutocloaking": false,
+  "cSpell.words": [
+    "adminjs",
+    "amarillos",
+    "billglover",
+    "caprover",
+    "davidwilson",
+    "Fontawesome",
+    "gerado",
+    "headshots",
+    "jermy",
+    "jglover",
+    "kyaw",
+    "linebreak",
+    "marknair",
+    "mcall",
+    "middlewares",
+    "Shinn",
+    "svgs",
+    "tailwindcss",
+    "tanstack",
+    "Teamspeak",
+    "Twotone",
+    "wajeht"
+  ],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/built": true,
+    "**/coverge": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
