@@ -44,6 +44,7 @@ if (ENV === ENV_ENUM.DEVELOPMENT) {
 }
 
 // TODO!: disable this for prod!
+app.set('trust proxy', 1);
 app.use(
   helmet({
     contentSecurityPolicy: false,
